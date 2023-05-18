@@ -145,8 +145,8 @@ const About: NextPage = () => {
                 <Image
                   src="/images/about/washington-monument-doodle-01.png"
                   alt="A sketch of the Faisal Mosque in Islamabad"
-                  width={183}
-                  height={146}
+                  width={121}
+                  height={201}
                 />
               </div>
             </div>
