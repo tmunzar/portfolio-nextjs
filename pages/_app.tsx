@@ -22,8 +22,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/logo192.png"></link>
-        <link rel="icon" sizes="192x192" href="/logo192.png"></link>
-        <link rel="icon" sizes="512x512" href="/logo512.png"></link>
         <meta property="og:title" content="Talal Munzar" />
         <meta
           name="twitter:title"
