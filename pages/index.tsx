@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import Loader from '../src/Loader'
 import Annotation from '../src/Annotation'
 import Link from 'next/link'
@@ -10,17 +9,6 @@ import ContentModal from '../src/ContentModal'
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>
-          Talal Munzar - Designer, Developer, and Researcher of Digital
-          Experiences
-        </title>
-        <meta
-          name="description"
-          content="Talal Munzar - Designer, Developer, and Researcher of Digital Experiences"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <div id="home-page">
         <Loader />
         <section id="intro">
