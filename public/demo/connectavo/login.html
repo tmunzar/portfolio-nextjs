@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo - Login</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="row padded padded-xlg">
+
+            <div class="col-lg-4 col-md-5 col-sm-8 col-xs-12 col-centered">
+              <div class="text-center">
+                <img src="img/logo.svg" width="200" />
+              </div>
+
+              <div class="row margin-top-20 shadowed padded">
+
+                <div class="form-group">
+                  <label>Email</label>
+                  <div class="input-with-icon left-icon">
+                    <i class="icon-mail icon"></i> <!-- Adjust font size & padding of icon accordingly since their size and orientations vary. -->
+                    <input type="email" class="form-control" />
+                  </div>
+
+                </div>
+
+                <div class="form-group">
+                  <label>Password</label>
+                  <div class="input-with-icon left-icon">
+                    <i class="icon-lock icon" style="font-size: 19px; padding-top: 12px;"></i> <!-- Adjust font size & padding of icon accordingly since their size and orientations vary. -->
+                    <input type="password" class="form-control">
+                  </div>
+                </div>
+
+                <div class="form-group margin-top-20">
+                  <label>
+                    <input type="checkbox">
+                    Remeber me
+                  </label>
+                  <a class="pull-right">Forgot password?</a>
+                </div>
+
+                <button type="button" class="btn btn-success btn-lg btn-block margin-top-30">
+                  Login
+                </button>
+
+              </div>
+
+
+
+              <div class="row margin-top-30 shadowed padded">
+                <h3 class="text-center weight-normal">
+                  Forgot Password?
+                </h3>
+                <p class="text-center margin-top-30">
+                  Please enter your email and we will send you instructions on how to reset it.
+                </p>
+                <div class="form-group margin-top-20">
+                  <label>Email</label>
+                  <input type="email" class="form-control" />
+                </div>
+
+                <button type="button" class="btn btn-success btn-lg btn-block margin-top-30">
+                  Submit
+                </button>
+
+              </div>
+
+
+              <div class="row margin-top-30 shadowed padded">
+                <h4 class="text-center weight-normal">
+                  Email sent to:
+                </h4>
+                <h3 class="text-center weight-medium margin-top-30">
+                  john.smith@email.com
+                </h3>
+                <div class="margin-top-20 text-center">
+                  <i class="icon-ok-circled color-success" style="font-size: 90px"></i>
+                </div>
+
+                <p class="text-center margin-top-30">
+                  Please check your email address and follow the instructions
+                </p>
+
+              </div>
+
+
+              <div class="row margin-top-30 shadowed padded">
+                <h4 class="text-center weight-normal">
+                  Call a modal!
+                </h4>
+                <h3 class="text-center weight-medium margin-top-30">
+                  click below to call one!
+                </h3>
+                <button type="button" class="btn btn-success btn-lg btn-block margin-top-30" data-toggle="modal" data-target="#myModal">
+                  Click Already!
+                </button>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4>Are you sure you wanna do what this modal is <strong>supposed to do</strong>?</h4>
+                  <div class="margin-top-30">
+                    <button type="button" class="btn btn-success btn-lg">Yes</button>
+                    <button type="button" class="btn btn-default btn-lg" data-dismiss="modal">No</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
+

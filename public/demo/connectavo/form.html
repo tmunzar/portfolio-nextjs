@@ -1,0 +1,586 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo - Forms</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div id="top-bar-mobile" class="row visible-xs-block">
+
+        <img src="img/logo.svg" width="150" />
+
+        <a href="#" class="popover-toggle">
+          <div class="search-icon">
+            <img src="img/icons/search-01.png" />
+          </div>
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </a>
+
+      </div>
+
+      <div class="top-bar-mobile-popover-content hide">
+
+        <div class="input-with-icon right-icon margin-bottom-10">
+          <input type="text" class="form-control" placeholder="Search">
+          <img src="img/icons/search-01.png" class="icon" width="25" />
+        </div>
+
+        <div class="profile-details border-bottom">
+          <img src="img/john-smith.png" class="profile-picture" />
+          <span>John Smith</span>
+        </div>
+        <nav class="profile-menu">
+          <a href="#">
+            <img src="img/icons/notification-01.svg" width="20" class="notification-icon" /> <span class="notification-count">12</span> Notifications
+          </a>
+          <a href="#">
+            <i class="icon-settings"></i> Account Settings
+          </a>
+          <a href="#">
+            <i class="icon-logout"></i> Logout
+          </a>
+        </nav>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-1 col-md-2 side-bar">
+          <nav class="navbar navbar-default navbar-fixed-side">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h2 class="visible-xs-block margin-top-10">Dashboard</h2>
+
+              <a class="navbar-brand hidden-xs" href="#">
+                <img src="img/logo.svg" class="logo hidden-sm" />
+                <img src="img/logo-circle.svg" class="collapsed-logo" />
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+
+                <li>
+                  <a href="index.html">
+                    <img src="img/icons/dashboard-01.svg" class="menu-icon" /> <!-- default icon -->
+                    <img src="img/icons/dashboard-white-01.svg" class="menu-icon active" /> <!-- icon shown when li is active -->
+                    <span class="menu-text hidden-sm">Dashboard</span>
+                  </a>
+                </li>
+
+                <li class="active">
+                  <a href="form.html">
+                    <img src="img/icons/wo-01.svg" class="menu-icon" />
+                    <img src="img/icons/wo-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Forms</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="assets.html">
+                    <img src="img/icons/assets-01.svg" class="menu-icon" />
+                    <img src="img/icons/assets-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Assets</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tables.html">
+                    <img src="img/icons/reporting-01.svg" class="menu-icon" />
+                    <img src="img/icons/reporting-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Reporting</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="settings.html">
+                    <img src="img/icons/settings-01.svg" class="menu-icon" />
+                    <img src="img/icons/settings-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text  hidden-sm">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </nav>
+
+        </div>
+        <div id="main-content" class="col-sm-11 col-md-10">
+          <div id="top-bar" class="hidden-xs">
+
+            <div class="row">
+
+              <div class="col-md-8 col-sm-7">
+                <h1 class="heading">Dashboard</h1>
+                <div class="form-group search">
+                  <img src="img/icons/search-01.png" class="search-icon" />
+                  <input type="text" class="form-control search-input" placeholder="Search">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-5">
+                <div class="col-sm-5 notifications">
+                  <a href="#" class="notifications-popover">
+                    <img src="img/icons/notification-01.svg" width="20" class="notification-icon" />
+                    <span>Notifications</span>
+                    <div class="notification-count">12</div>
+                  </a>
+
+                </div>
+                <div class="col-sm-7 profile">
+                  <a href="#" class="profile-popover">
+                    <img src="img/john-smith.png" class="profile-picture" />
+                    <span>John Smith <i class="icon-down-open"></i></span>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="profile-content hide">
+            <div class="profile-details border-bottom">
+              <img src="img/john-smith.png" class="profile-picture" />
+              <span>John Smith</span>
+            </div>
+            <nav class="profile-menu">
+              <a href="#">
+                <i class="icon-settings"></i> Account Settings
+              </a>
+              <a href="#">
+                <i class="icon-logout"></i> Logout
+              </a>
+            </nav>
+
+          </div>
+
+          <div class="notifications-content hide">
+            <div class="activity-list scrollable">
+              <div class="row listing">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/john-smith.png" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    <a href="#" class="profile">John Smith</a> created a new <a href="#">work order</a>.
+                  </h5>
+                  <time>
+                    1 minute ago
+                  </time>
+                </div>
+              </div>
+
+              <div class="row listing ">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/icons/scheduled-01.svg" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    A scheduled <a href="#">work order</a> has been created for Machine A - Unit B
+                  </h5>
+                  <time>
+                    2 hours ago
+                  </time>
+                </div>
+              </div>
+
+              <div class="row listing">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/terry-martin.png" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    <a href="#" class="profile">Terry Martin</a> created a new <a href="#">work order</a>.
+                  </h5>
+                  <time>
+                    1 day ago
+                  </time>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-md-8">
+
+                <div class="section">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="inputName">Work Order Name</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row margin-top-10 margin-bottom-30">
+                      <div class="col-sm-1">
+                        <a href="#" class="back-button">
+                          <i class="icon-left"></i>
+                        </a>
+                      </div>
+                      <div class="col-sm-6">
+                          <input type="text" value="Full Stand Repair" class="form-control" disabled>
+                      </div>
+                    </div>
+
+                    <div class="bordered padded">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Normal Input</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Location</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Disabled Input</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email" disabled>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Completed Input</label>
+                            <input type="text" class="form-control complete" id="exampleInputEmail1" placeholder="Email" disabled>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="dp-input">Datepicker</label>
+                            <input type="text" class="form-control" id="dp-input">
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Switch</label>
+                            <input type="checkbox" name="my-checkbox" class="" checked>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Input with icon to the left</label>
+                            <div class="input-with-icon left-icon">
+                              <i class="icon-lock icon" style="font-size: 19px; padding-top: 12px;"></i> <!-- Adjust font size & padding of icon accordingly since their size and orientations vary. -->
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Input with icon to the right</label>
+                            <div class="input-with-icon right-icon">
+                              <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                              <i class="icon-mail icon"></i>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Location</label>
+                            <textarea class="form-control" placeholder="Email" rows="8">I am in progress input</textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Location</label>
+                            <textarea class="form-control complete" placeholder="Email" rows="8" disabled>I am completed input.</textarea>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-12">
+                          <h5 class="border-bottom">Unit Creation</h5>
+                          <h4 class="padded padded-sm">
+                            2 Units
+                            <button class="btn btn-success btn-sm pull-right">Add Units <span class="btn-icon"><img src="img/icons/add-01.svg" width="12" /></span></button>
+                          </h4>
+
+                          <table class="table simple">
+                            <thead>
+                              <tr>
+                                <th>Name</th>
+                                <th>Sensor ID</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="form">
+                                <td>
+                                  <input type="text" class="form-control" placeholder="Unit C">
+                                  <div class="margin-top-10">
+                                    <button class="btn btn-success">
+                                      Add
+                                    </button>
+                                    <button class="btn btn-default">
+                                      Cancel
+                                    </button>
+                                  </div>
+                                </td>
+                                <td>
+                                  <input type="text" class="form-control" placeholder="54362453" disabled>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>Unit A</td>
+                                <td>543627</td>
+                              </tr>
+                              <tr>
+                                <td>Unit A</td>
+                                <td>543627</td>
+                              </tr>
+                              <tr>
+                                <td>Unit A</td>
+                                <td>543627</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                          <label for="inputName">Work Order Name</label>
+                          <input type="text" class="form-control" id="inputName" placeholder="Name">
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="row margin-top-20">
+                      <div class="col-md-12">
+                        <div class="checkbox">
+                          <label>
+                            <input type="checkbox" value="">
+                            Schedule
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bordered padded">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Repeats</label>
+                            <select class="form-control">
+                              <option>Weekly</option>
+                              <option>Monthly</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Repeat Every</label>
+                            <select class="form-control">
+                              <option>1 Week</option>
+                              <option>1 Month</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row margin-top-10 margin-bottom-30">
+                        <div class="col-md-12">
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Mon
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Tue
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Wed
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Thu
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Fri
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Sat
+                          </label>
+                          <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Sun
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Starts On</label>
+                            <select class="form-control">
+                              <option>Weekly</option>
+                              <option>Monthly</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+
+                        <div class="col-md-2">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" value="option1" checked>
+                              Never
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-2">
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optionsRadios" value="option2">
+                              After
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+                        <div class="col-md-4">
+                          <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                        </div>
+
+                      </div>
+
+
+                    </div>
+
+                    <div class="row margin-top-20 margin-bottom-20">
+                      <div class="col-md-12">
+                        <button class="btn btn-success btn-sm">Add Docs <span class="btn-icon"><img src="img/icons/add-01.svg" width="12" /></span></button>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button class="btn btn-success btn-lg">Create</button>
+                        <button class="btn btn-default btn-lg">Cancel</button>
+                      </div>
+                    </div>
+
+                  </form>
+
+
+                </div>
+              </div>
+
+              <div class="col-md-4 side-content">
+                  <div class="widget">
+                    <h4 class="heading">
+                      Other Docs <button class="btn btn-success btn-sm pull-right">Add Docs <span class="btn-icon"><img src="img/icons/add-01.svg" width="12" /></span></button>
+                    </h4>
+                    <div class="activity-list scrollable">
+
+
+                      <div class="row listing">
+                        <div class="col-xs-2 no-padding-right">
+                          <i class="icon-file-pdf doc-icon"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          <h5>
+                            <a href="#">Full Rhostoff Manual</a>.
+                          </h5>
+                          <time>
+                            1 minute ago
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="row listing">
+                        <div class="col-xs-2 no-padding-right">
+                          <i class="icon-file-doc doc-icon"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          <h5>
+                            <a href="#">Machine Document A</a>.
+                          </h5>
+                          <time>
+                            2 hours ago
+                          </time>
+                        </div>
+                      </div>
+
+                      <div class="row listing">
+                        <div class="col-xs-2 no-padding-right">
+                          <i class="icon-file-doc doc-icon"></i>
+                        </div>
+                        <div class="col-xs-10">
+                          <h5>
+                            <a href="#">Machine Document B</a>.
+                          </h5>
+                          <time>
+                            2 hours ago
+                          </time>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,43 @@
+<svg id="reporting-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.21 21.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #00b3f1;
+      }
+    </style>
+  </defs>
+  <title>reporting-icon</title>
+  <g>
+    <line class="cls-1" x1="0.5" y1="0.5" x2="0.5" y2="20.68"/>
+    <path class="cls-1" d="M520.32,72.14c0.12-.61.23-1.32,0.37-2.1,0.28-1.52.42-3,1.24-4" transform="translate(-500.55 -62.74)"/>
+    <path class="cls-1" d="M513.4,70.86c0.67,0.78,1.12,1.44,1.79,2.21" transform="translate(-500.55 -62.74)"/>
+    <path class="cls-1" d="M527.26,83.42H501.05s3.65-.9,4.84-6.93a17.56,17.56,0,0,1,1.46-4.58" transform="translate(-500.55 -62.74)"/>
+    <g>
+      <circle class="cls-2" cx="17.46" cy="12.21" r="1.63"/>
+      <path class="cls-3" d="M518,73.82A1.13,1.13,0,1,1,516.88,75,1.13,1.13,0,0,1,518,73.82m0-1A2.13,2.13,0,1,0,520.14,75,2.13,2.13,0,0,0,518,72.82h0Z" transform="translate(-500.55 -62.74)"/>
+    </g>
+    <g>
+      <circle class="cls-2" cx="9.52" cy="6.71" r="1.63"/>
+      <path class="cls-3" d="M510.07,68.32a1.13,1.13,0,1,1-1.13,1.13,1.13,1.13,0,0,1,1.13-1.13m0-1a2.13,2.13,0,1,0,2.13,2.13,2.13,2.13,0,0,0-2.13-2.13h0Z" transform="translate(-500.55 -62.74)"/>
+    </g>
+    <g>
+      <circle class="cls-4" cx="24.58" cy="2.63" r="1.63"/>
+      <path class="cls-3" d="M525.13,64.24A1.13,1.13,0,1,1,524,65.37a1.13,1.13,0,0,1,1.13-1.13m0-1a2.13,2.13,0,1,0,2.13,2.13,2.13,2.13,0,0,0-2.13-2.13h0Z" transform="translate(-500.55 -62.74)"/>
+    </g>
+  </g>
+</svg>

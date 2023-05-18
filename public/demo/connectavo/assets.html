@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Demo - Assets</title>
+
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <div id="top-bar-mobile" class="row visible-xs-block">
+
+        <img src="img/logo.svg" width="150" />
+
+        <a href="#" class="popover-toggle">
+          <div class="search-icon">
+            <img src="img/icons/search-01.png" />
+          </div>
+          <i class="glyphicon glyphicon-menu-hamburger"></i>
+        </a>
+
+      </div>
+
+      <div class="top-bar-mobile-popover-content hide">
+
+        <div class="input-with-icon right-icon margin-bottom-10">
+          <input type="text" class="form-control" placeholder="Search">
+          <img src="img/icons/search-01.png" class="icon" width="25" />
+        </div>
+
+        <div class="profile-details border-bottom">
+          <img src="img/john-smith.png" class="profile-picture" />
+          <span>John Smith</span>
+        </div>
+        <nav class="profile-menu">
+          <a href="#">
+            <img src="img/icons/notification-01.svg" width="20" class="notification-icon" /> <span class="notification-count">12</span> Notifications
+          </a>
+          <a href="#">
+            <i class="icon-settings"></i> Account Settings
+          </a>
+          <a href="#">
+            <i class="icon-logout"></i> Logout
+          </a>
+        </nav>
+      </div>
+
+
+      <div class="row">
+        <div class="col-sm-1 col-md-2 side-bar">
+          <nav class="navbar navbar-default navbar-fixed-side">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <h2 class="visible-xs-block margin-top-10">Dashboard</h2>
+
+              <a class="navbar-brand hidden-xs" href="#">
+                <img src="img/logo.svg" class="logo hidden-sm" />
+                <img src="img/logo-circle.svg" class="collapsed-logo" />
+              </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+              <ul class="nav navbar-nav">
+
+                <li>
+                  <a href="index.html">
+                    <img src="img/icons/dashboard-01.svg" class="menu-icon" /> <!-- default icon -->
+                    <img src="img/icons/dashboard-white-01.svg" class="menu-icon active" /> <!-- icon shown when li is active -->
+                    <span class="menu-text hidden-sm">Dashboard</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="form.html">
+                    <img src="img/icons/wo-01.svg" class="menu-icon" />
+                    <img src="img/icons/wo-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Forms</span>
+                  </a>
+                </li>
+
+                <li class="active">
+                  <a href="assets.html">
+                    <img src="img/icons/assets-01.svg" class="menu-icon" />
+                    <img src="img/icons/assets-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Assets</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="tables.html">
+                    <img src="img/icons/reporting-01.svg" class="menu-icon" />
+                    <img src="img/icons/reporting-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text hidden-sm">Reporting</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="settings.html">
+                    <img src="img/icons/settings-01.svg" class="menu-icon" />
+                    <img src="img/icons/settings-white-01.svg" class="menu-icon active" />
+                    <span class="menu-text  hidden-sm">Settings</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+          </nav>
+
+        </div>
+        <div id="main-content" class="col-sm-11 col-md-10">
+          <div id="top-bar" class="hidden-xs">
+
+            <div class="row">
+
+              <div class="col-md-8 col-sm-7">
+                <h1 class="heading">Dashboard</h1>
+                <div class="form-group search">
+                  <img src="img/icons/search-01.png" class="search-icon" />
+                  <input type="text" class="form-control search-input" placeholder="Search">
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-5">
+                <div class="col-sm-5 notifications">
+                  <a href="#" class="notifications-popover">
+                    <img src="img/icons/notification-01.svg" width="20" class="notification-icon" />
+                    <span>Notifications</span>
+                    <div class="notification-count">12</div>
+                  </a>
+
+                </div>
+                <div class="col-sm-7 profile">
+                  <a href="#" class="profile-popover">
+                    <img src="img/john-smith.png" class="profile-picture" />
+                    <span>John Smith <i class="icon-down-open"></i></span>
+                  </a>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="profile-content hide">
+            <div class="profile-details border-bottom">
+              <img src="img/john-smith.png" class="profile-picture" />
+              <span>John Smith</span>
+            </div>
+            <nav class="profile-menu">
+              <a href="#">
+                <i class="icon-settings"></i> Account Settings
+              </a>
+              <a href="#">
+                <i class="icon-logout"></i> Logout
+              </a>
+            </nav>
+
+          </div>
+
+          <div class="notifications-content hide">
+            <div class="activity-list scrollable">
+              <div class="row listing">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/john-smith.png" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    <a href="#" class="profile">John Smith</a> created a new <a href="#">work order</a>.
+                  </h5>
+                  <time>
+                    1 minute ago
+                  </time>
+                </div>
+              </div>
+
+              <div class="row listing ">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/icons/scheduled-01.svg" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    A scheduled <a href="#">work order</a> has been created for Machine A - Unit B
+                  </h5>
+                  <time>
+                    2 hours ago
+                  </time>
+                </div>
+              </div>
+
+              <div class="row listing">
+                <div class="col-md-3 col-xs-4">
+                  <img class="activity-icon" src="img/terry-martin.png" />
+                </div>
+                <div class="col-md-9 col-xs-8">
+                  <h5>
+                    <a href="#" class="profile">Terry Martin</a> created a new <a href="#">work order</a>.
+                  </h5>
+                  <time>
+                    1 day ago
+                  </time>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div class="row">
+              <div class="col-md-12">
+                <div class="row margin-top-30 margin-bottom-30">
+                  <div class="col-md-8">
+                    <h4>2 Assets</h4>
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn btn-success pull-right">
+                      Create New Asset
+                      <span class="btn-icon">
+                        <img src="img/icons/add-01.svg" width="12" />
+                      </span>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="bordered padded">
+                  <div class="row">
+                    <div class="col-md-6 margin-bottom-sm-20 border-right">
+                      <div>
+                        <h3 class="percircle-heading">Full Stand Repair <div data-percent="60" class="percircle blue small pull-right"></div></h3>
+
+                        <div class="row">
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Responsible Manager</label>
+                              <input type="text" class="form-control complete" value="Jason Roy" disabled>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Location</label>
+                              <input type="text" class="form-control complete" value="Jason Roy" disabled>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="row">
+
+                          <div class="col-md-4">
+                            <div class="border-block text-center">
+                              <h4>Total</h4>
+                              <h1 class="color-primary">21</h1>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="border-block text-center">
+                              <h4>Overdue</h4>
+                              <h1 class="color-primary">04</h1>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="border-block text-center">
+                              <h4>Critical</h4>
+                              <h1 class="color-primary">03</h1>
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div>
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li role="presentation" class="active"><a href="#scores" aria-controls="scores" role="tab" data-toggle="tab">Health Scores</a></li>
+                          <li role="presentation"><a href="#schedule" aria-controls="schedule" role="tab" data-toggle="tab">Maintenance Schedule</a></li>
+                          <li role="presentation"><a href="#documents" aria-controls="documents" role="tab" data-toggle="tab">Documents</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active" id="scores">
+                            <ul class="simple">
+                              <li>Unit A <span class="pull-right color-danger">55%</span></li>
+                              <li>Unit B <span class="pull-right">65%</span></li>
+                              <li>Unit C <span class="pull-right">60%</span></li>
+                              <li>Unit D <span class="pull-right color-danger">40%</span></li>
+                            </ul>
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="schedule">
+
+                            <table class="table table-responsive" id="scheduleTable">
+                              <thead>
+                                <tr>
+                                  <th data-constant="1">Name <i class="icon-down-open thead-icon"></th>
+                                  <th data-column="1">Schedule <i class="icon-up-open thead-icon"></th>
+                                  <th data-column="2" class="hidden-xs">Unit <i class="icon-down-open thead-icon"></th>
+                                  <th data-column="3" class="hidden-xs">Assignee <i class="icon-up-open thead-icon"></th>
+                                  <th class="visible-xs-block table-mobile-action-holder" data-constant="1"> <!-- define data-constant necessary to avoid being hidden -->
+                                    <a href="#" class="plain table-mobile-show-popover-toggle visible-xs-block">
+                                      <i class="glyphicon glyphicon-list-alt"></i>
+                                    </a>
+                                  </th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td data-constant="1">Clean Pipe</td>
+                                  <td data-column="1">Weekly</td>
+                                  <td data-column="2" class="hidden-xs">Tank 288</td>
+                                  <td data-column="3" class="hidden-xs">Bob Smith</td>
+                                </tr>
+                                <tr>
+                                  <td data-constant="1">Clean Pipe</td>
+                                  <td data-column="1">Weekly</td>
+                                  <td data-column="2" class="hidden-xs">Tank 288</td>
+                                  <td data-column="3" class="hidden-xs">Bob Smith</td>
+                                </tr>
+                                <tr>
+                                  <td data-constant="1">Clean Pipe</td>
+                                  <td data-column="1">Weekly</td>
+                                  <td data-column="2" class="hidden-xs">Tank 288</td>
+                                  <td data-column="3" class="hidden-xs">Bob Smith</td>
+                                </tr>
+                              </tbody>
+                            </table>
+
+                            <!-- hidden popover content for the responsive table toggle menu -->
+                            <div class="schedule-table-mobile-show-popover-content hide">
+                              <div class="popover-content">
+                                <div class="list-group table-mobile-show-columns-toggle no-margin-bottom" data-table-id="scheduleTable"> <!-- make sure to define the data-table-id to the right table -->
+                                    <a href="#" class="list-group-item active" data-column="1">Schedule</a>
+
+                                    <a href="#" class="list-group-item" data-column="2">Unit</a>
+
+                                    <a href="#" class="list-group-item" data-column="3">Assignee</a>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div role="tabpanel" class="tab-pane" id="documents">...</div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
+

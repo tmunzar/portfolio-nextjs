@@ -1,0 +1,28 @@
+<svg id="dashboard-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.39 21.23">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-miterlimit: 10;
+        stroke-width: 1.22px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #fff;
+      }
+
+      .cls-2 {
+        fill: #00b3f1;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <title>Vector Smart Object</title>
+  <g>
+    <path class="cls-1" d="M525,214a1.93,1.93,0,0,1-.15.24,1.79,1.79,0,0,1-1.47.77H504.94a1.76,1.76,0,0,1-1-.33,1.86,1.86,0,0,1-.46-0.47A12.58,12.58,0,0,1,514.95,195,12.58,12.58,0,0,1,525,214Z" transform="translate(-500.95 -194.4)"/>
+    <path class="cls-1" d="M514.65,199a8.86,8.86,0,0,0-8.86,8.86" transform="translate(-500.95 -194.4)"/>
+    <path class="cls-1" d="M514.22,212a3.58,3.58,0,0,1-3-5.75,8.05,8.05,0,0,1,2.27-1.63,49.27,49.27,0,0,1,4.72-2.2l0.14,0a0.42,0.42,0,0,1,.44.47c0,0.16-.32,2.7-0.84,4.89a8.76,8.76,0,0,1-1,2.87A3.57,3.57,0,0,1,514.22,212Z" transform="translate(-500.95 -194.4)"/>
+    <circle class="cls-2" cx="514" cy="208.43" r="1.79" transform="translate(-452.85 314.99) rotate(-54.93)"/>
+  </g>
+</svg>

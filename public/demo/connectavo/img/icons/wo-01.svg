@@ -1,0 +1,35 @@
+<svg id="WO-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.09 23.77">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #00b3f1;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #787878;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: #787878;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>WO-icon</title>
+  <g>
+    <line class="cls-1" x1="9.03" y1="2.96" x2="25.59" y2="2.96"/>
+    <g>
+      <circle class="cls-2" cx="3.24" cy="12.27" r="2"/>
+      <path class="cls-3" d="M504.32,290.31a1.5,1.5,0,1,1-1.5,1.5,1.5,1.5,0,0,1,1.5-1.5m0-1a2.5,2.5,0,1,0,2.5,2.5,2.5,2.5,0,0,0-2.5-2.5h0Z" transform="translate(-501.08 -279.54)"/>
+    </g>
+    <line class="cls-1" x1="9.03" y1="12.27" x2="25.59" y2="12.27"/>
+    <line class="cls-1" x1="9.03" y1="20.82" x2="25.59" y2="20.82"/>
+    <polyline class="cls-4" points="0.5 2.79 2.47 5.41 5.98 0.5"/>
+    <polyline class="cls-4" points="0.5 20.65 2.47 23.27 5.98 18.36"/>
+  </g>
+</svg>

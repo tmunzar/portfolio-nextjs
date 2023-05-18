@@ -1,0 +1,33 @@
+<svg id="asset-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.61 24.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #787878;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #00b3f1;
+      }
+
+      .cls-3 {
+        fill: #d7dadd;
+      }
+    </style>
+  </defs>
+  <title>asset-icon</title>
+  <g>
+    <polyline class="cls-1" points="3.81 11.82 3.81 0.5 13.38 0.5"/>
+    <polyline class="cls-1" points="13.38 0.5 22.95 0.5 22.95 11.82"/>
+    <line class="cls-1" x1="0.5" y1="11.82" x2="27.11" y2="11.82"/>
+    <line class="cls-1" x1="0.5" y1="24.23" x2="27.11" y2="24.23"/>
+    <circle class="cls-2" cx="13.74" cy="18.1" r="1.66"/>
+    <circle class="cls-3" cx="4.13" cy="18.1" r="1.66"/>
+    <circle class="cls-3" cx="23.48" cy="18.1" r="1.66"/>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<svg id="notification-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.35 27.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #787878;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-2 {
+        fill: #fd878f;
+      }
+    </style>
+  </defs>
+  <title>notification-icon</title>
+  <path class="cls-1" d="M410.73,444.23a4.13,4.13,0,0,0-3.87-1.15c-2.71.48-5.48,2.33-7.06,8.68-0.47,2.16-.65,5.79-3,9,0,0-1.59,1.86-1.26,3.31s1.53,1.94,4.27,1.78,4.62,0,8.24,0c5.95-.22,11.74,1.44,11.8-1.7,0-2.07-2.07-3-2.72-6.19" transform="translate(-394.94 -442.5)"/>
+  <path class="cls-1" d="M404.21,465.83s0.85,3.9,4.27,3.34a3.79,3.79,0,0,0,2.53-3.25" transform="translate(-394.94 -442.5)"/>
+  <circle class="cls-2" cx="415.71" cy="449.88" r="3.71" transform="matrix(0.99, -0.16, 0.16, 0.99, -461.6, -370.15)"/>
+</svg>
