@@ -11,12 +11,12 @@ const Home: NextPage = () => {
     <>
       <div id="home-page">
         <Loader />
-        <section id="intro">
+        <section id="intro" className="relative">
           <div className="container">
             <div className="columns is-vcentered">
               <div className="column is-two-thirds">
                 <img
-                  src="/images/about/me-in-a-circle-01.png"
+                  src="/images/about/me-in-a-circle-02.png"
                   alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
                   style={{
                     width: 200,
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
                   className="show-only-for-mobile"
                 />
                 <h1>{`Hi, I'm Talal and I like to`}</h1>
-                <h1 className="primary">Research, Design & Develop</h1>
+                <h1 className="primary">Engineer, Design & Develop</h1>
                 <h1>human-centered & joyful digital experiences.</h1>
 
                 <div className="relative is-inline-block hide-for-mobile">
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
               <div
-                className="column is-half is-paddingless relative hide-for-mobile"
+                className="column is-half is-paddingless hide-for-mobile"
                 style={{ marginTop: 'auto' }}
               >
                 <Annotation
@@ -68,21 +68,23 @@ const Home: NextPage = () => {
                   arrowProps={{
                     translate: '7px, 12px',
                   }}
-                  animOffset={-100}
+                  animOffset={-300}
                   animDelay={400}
-                />
-                <img
-                  src="/images/me-01.png"
-                  alt="It's a me! Talal Munzar!"
-                  style={{
-                    float: 'right',
-                    width: 570,
-                    marginBottom: '-0.75rem',
-                  }}
                 />
               </div>
             </div>
           </div>
+          <img
+            src="/images/me-02.png"
+            alt="It's a me! Talal Munzar!"
+            style={{
+              width: 340,
+              position: 'absolute',
+              right: 0,
+              top: 20,
+            }}
+            className="hide-for-mobile"
+          />
         </section>
 
         <section id="case-studies" className="is-light-grey">
@@ -158,10 +160,12 @@ const Home: NextPage = () => {
                       <Tag text="Prototype" icon="prototype" />
                     </div>
                     <Link
-                      className="button column is-4-desktop is-6-tablet"
+                      passHref
                       href="/designing-an-online-learning-platform-for-independent-filmmakers"
                     >
-                      View Case Study
+                      <button className="button column is-4-desktop is-6-tablet">
+                        View Case Study
+                      </button>
                     </Link>
                   </div>
                 </div>

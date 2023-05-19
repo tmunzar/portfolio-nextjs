@@ -70,7 +70,7 @@ const About: NextPage = () => {
               </div>
               <div className="column is-half-tablet is-6-mobile is-narrow">
                 <Image
-                  src="/images/about/me-in-a-circle-01.png"
+                  src="/images/about/me-in-a-circle-02.png"
                   alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
                   width={250}
                   height={250}
