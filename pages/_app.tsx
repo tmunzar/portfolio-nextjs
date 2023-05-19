@@ -6,6 +6,7 @@ import Footer from '../src/Footer'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -31,6 +32,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="og:image" content="/logo512.png" />
         <meta name="viewport" content="width=device-width" />
       </Head>
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=UA-136163126-1"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'UA-136163126-1');
+        `}
+      </Script>
       <MainNav />
       <TransitionGroup>
         <CSSTransition
