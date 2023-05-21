@@ -68,7 +68,7 @@ const About: NextPage = () => {
                   of digital experiences
                 </h2>
               </div>
-              <div className="column is-half-tablet is-6-mobile is-narrow">
+              <div className="column is-half-tablet is-6-mobile">
                 <Image
                   src="/images/about/me-in-a-circle-02.png"
                   alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
