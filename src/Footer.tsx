@@ -120,7 +120,7 @@ const Footer = (): ReactElement => {
           <div className="column source">
             <p>
               This website was designed with pen, paper & figma, and engineered
-              using
+              using{' '}
               <a href="https://nextjs.org/" className="no-highlight">
                 nextjs
               </a>

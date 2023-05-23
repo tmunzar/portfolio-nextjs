@@ -160,12 +160,14 @@ const About: NextPage = () => {
               <div className="column is-offset-3 is-5">
                 <p>
                   I have been carefully crafting digital experiences in one form
-                  or another for over a decade. I am an engineer, with
-                  significany full-stack experience, but a specialization in
-                  front-end engineering. Having worked closely with designers
-                  over the years, I have a keen eye for good visual design and a
-                  sense for seemless user experiences. With formal training in
-                  UX methodology, I also have the ability for user research,
+                  or another for over a decade. I have background in full-stack
+                  web development, with a specialization in front-end
+                  engineering.
+                  <br />
+                  <br /> Having worked closely with designers over the years, I
+                  have a keen eye for good visual design and a sense for
+                  seemless user experiences. With formal training in UX
+                  methodology, I also have the ability for user research,
                   sketching, wireframeing, and prototyping.
                 </p>
               </div>
