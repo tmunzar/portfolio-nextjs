@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const MainNav = (): ReactElement => {
   const router = useRouter()
-  console.log(router.pathname)
+
   return (
     <div id="main-nav">
       <Link href="/#intro">
@@ -52,27 +52,41 @@ const MainNav = (): ReactElement => {
           />
         </svg>
       </Link>
-      <nav>
-        <Link href="/#case-studies" passHref>
-          <a className={router.pathname == '/' ? 'active' : ''}>Work</a>
-        </Link>
-        <Link href="/about" passHref>
-          <a className={router.pathname == '/about' ? 'active' : ''}>About</a>
-        </Link>
-        <a
-          href="https://www.linkedin.com/in/tmunzar/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hide-for-mobile"
-        >
-          LinkedIn
-        </a>
-        <a href="mailto:tmunzar@gmail.com" className="hide-for-mobile">
-          Email
-        </a>
-        <Link href="#footer" passHref>
-          <a className="show-only-for-mobile">Contact</a>
-        </Link>
+      <nav role="navigation">
+        <ul>
+          <li>
+            <Link href="/#case-studies" passHref>
+              <a className={router.pathname == '/' ? 'active' : ''}>Work</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" passHref>
+              <a className={router.pathname == '/about' ? 'active' : ''}>
+                About
+              </a>
+            </Link>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/tmunzar/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hide-for-mobile"
+            >
+              LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="mailto:tmunzar@gmail.com" className="hide-for-mobile">
+              Email
+            </a>
+          </li>
+          <li className="show-only-for-mobile">
+            <Link href="#footer" passHref>
+              <a>Contact</a>
+            </Link>
+          </li>
+        </ul>
       </nav>
     </div>
   )

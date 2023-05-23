@@ -52,6 +52,13 @@ a {
     color: $color-primary;
   }
 }
+a.no-highlight {
+  text-decoration: none !important;
+  color: inherit !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+}
 
 h1,
 h2,
@@ -125,9 +132,11 @@ img {
   height: auto;
   &.has-modal {
     cursor: pointer;
+    padding: 8px 4px;
+    border-radius: 8px;
     transition: 0.1s box-shadow linear, 0.1s transform linear;
     &:hover {
-      box-shadow: 0 0 10px #aaa;
+      box-shadow: 0 0 10px #ddd;
       transform: scale(1.01);
     }
   }
@@ -179,6 +188,9 @@ img {
   display: inline-block;
 }
 
+.has-padding {
+  padding: 8px;
+}
 .is-paddingless {
   padding: 0 !important;
 }
@@ -247,6 +259,11 @@ img {
   }
 
   nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
     a {
       display: block;
       margin-bottom: 15px;
@@ -272,6 +289,7 @@ img {
     flex-direction: row;
     background-color: #fff;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 0;
     box-shadow: 0 0 3px #ccc;
     .logo {
@@ -280,9 +298,11 @@ img {
       width: 100px;
     }
     nav {
-      display: flex;
-      justify-content: stretch;
-      margin-right: 5px;
+      ul {
+        display: flex;
+        justify-content: stretch;
+        margin-right: 8px;
+      }
       a {
         margin: 0 10px;
       }
@@ -357,7 +377,6 @@ article {
   top: 50%;
   margin-left: -140px;
   &.done {
-    transform: scale(1);
     height: 24px;
     width: 140px;
     transition: 0.7s all ease-in-out;
@@ -602,7 +621,6 @@ section {
   }
   #home-page {
     section#intro {
-      padding-top: 100px;
       padding-bottom: 60px;
       h1 {
         font-size: 30px;
@@ -696,7 +714,8 @@ section {
   }
   #home-page {
     section#intro {
-      height: 560px;
+      padding-top: 100px;
+      height: 600px;
       h1 {
         font-size: 40px;
       }
@@ -726,7 +745,6 @@ section {
   #home-page {
     section#intro {
       height: 700px;
-      padding-top: 100px;
     }
   }
 }

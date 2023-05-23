@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import Loader from '../src/Loader'
 import Annotation from '../src/Annotation'
 import Link from 'next/link'
 import Tag from '../src/Tag'
@@ -10,7 +9,6 @@ const Home: NextPage = () => {
   return (
     <>
       <div id="home-page">
-        <Loader />
         <section id="intro" className="relative">
           <div className="container">
             <div className="columns is-vcentered">
@@ -26,7 +24,7 @@ const Home: NextPage = () => {
                   className="show-only-for-mobile"
                 />
                 <h1>{`Hi, I'm Talal and I like to`}</h1>
-                <h1 className="primary">Engineer, Design & Develop</h1>
+                <h1 className="primary">Engineer & Design</h1>
                 <h1>human-centered & joyful digital experiences.</h1>
 
                 <div className="relative is-inline-block hide-for-mobile">
@@ -49,8 +47,10 @@ const Home: NextPage = () => {
                       flip: true,
                       translate: '25px, 20px',
                     }}
-                    animOffset={-100}
-                    animDelay={100}
+                    animProps={{
+                      animDelay: 500,
+                      onScroll: false,
+                    }}
                   />
                 </div>
               </div>
@@ -68,8 +68,9 @@ const Home: NextPage = () => {
                   arrowProps={{
                     translate: '7px, 12px',
                   }}
-                  animOffset={-300}
-                  animDelay={400}
+                  animProps={{
+                    onScroll: false,
+                  }}
                 />
               </div>
             </div>
@@ -106,24 +107,29 @@ const Home: NextPage = () => {
                   </div>
                   <div className="column">
                     <h2>
-                      <Link href="/designing-ux-in-a-b2b-environment-for-a-technical-audience-stardog-studio">
-                        Doing UX in a B2B environment for a technical audience
+                      <Link
+                        href="/engineering-a-user-experience-for-a-technical-audience"
+                        passHref
+                      >
+                        <a>
+                          Engineering a User Experience for
+                          <br /> a technical audience
+                        </a>
                       </Link>
                     </h2>
                     <p>
-                      As a UX Intern at Stardog, I was tasked to design the
-                      second iteration of Stardog Studio after its first release
-                      failed.
+                      As a UX Engineer at Stardog, I was tasked to design the
+                      second iteration of Stardog Studio after its first UI
+                      release failed with its audience.
                     </p>
                     <div className="tags-list">
-                      <Tag text="Research" icon="research" />
+                      <Tag text="Engineer" icon="develop" />
                       <Tag text="Design" icon="design" />
                       <Tag text="Prototype" icon="prototype" />
-                      <Tag text="Develop" icon="develop" />
                     </div>
                     <Link
                       passHref
-                      href="/designing-ux-in-a-b2b-environment-for-a-technical-audience-stardog-studio"
+                      href="/engineering-a-user-experience-for-a-technical-audience"
                     >
                       <button className="button column is-4-desktop is-6-tablet">
                         View Case Study
@@ -155,9 +161,9 @@ const Home: NextPage = () => {
                       certification to the independent film industry.
                     </p>
                     <div className="tags-list">
-                      <Tag text="Research" icon="research" />
                       <Tag text="Design" icon="design" />
                       <Tag text="Prototype" icon="prototype" />
+                      <Tag text="Research" icon="research" />
                     </div>
                     <Link
                       passHref
@@ -178,7 +184,7 @@ const Home: NextPage = () => {
           <div className="container">
             <div className="columns">
               <div className="column is-half">
-                <h1 className="section-heading">Selected Pre-UX Work</h1>
+                <h1 className="section-heading">Past Work</h1>
                 <p>
                   Before I set upon a dedicated UX career path, I co-ran a web
                   design agency called{' '}
@@ -188,10 +194,11 @@ const Home: NextPage = () => {
                     rel="noopener noreferrer"
                   >
                     Jellyfish
-                  </a>
-                  . In addition to dealing directly with clients, collaborating
-                  with graphic designers, and pitching concepts on 30+ projects,
-                  I also fully stack developed them. Here are some examples:
+                  </a>{' '}
+                  for 7 years . That time consisted of communincating with
+                  clients, collaborating with graphic designers, and managing
+                  work on 30+ projects. I was the principal Full-Stack Developer
+                  on all the projects Here are some examples:
                 </p>
               </div>
             </div>
@@ -213,18 +220,18 @@ const Home: NextPage = () => {
                       design, and implementation.
                     </p>
                     <p>
+                      <strong>Tech Stack:</strong> Laravel 4, Zurb Foundation,
+                      SCSS, jQuery, Elasticsearch
+                    </p>
+                    <p>
                       <strong>Design Toolkit:</strong> Leanstack Canvas, Hand
                       drawn Sketching, Photoshop Designs, InVision Prototypes,
                       Hi-Fi HTML Prototypes
                     </p>
-                    <p>
-                      <strong>Tech Stack:</strong> Laravel 4, SCSS, jQuery,
-                      Elasticsearch, Zurb Foundation
-                    </p>
                     <div className="tags-list">
+                      <Tag text="Engineer" icon="develop" />
                       <Tag text="Design" icon="design" />
                       <Tag text="Prototype" icon="prototype" />
-                      <Tag text="Develop" icon="develop" />
                     </div>
                     <ContentModal buttonText="View More Info">
                       <div className="columns">
@@ -355,6 +362,9 @@ const Home: NextPage = () => {
                       translate: '-70px, 20px',
                       rotate: '45deg',
                     }}
+                    animProps={{
+                      onScroll: true,
+                    }}
                   />
                 </div>
               </div>
@@ -377,18 +387,19 @@ const Home: NextPage = () => {
                       look and feel of it, but also developed an
                       institution-wide maintainable content management system.
                     </p>
-                    <p>
-                      <strong>Design Toolkit:</strong> Stakeholder Interviews,
-                      Hand drawn Sketching, Hi-fi HTML Prototypes
-                    </p>
+
                     <p>
                       <strong>Tech Stack:</strong> Laravel 5, Foundation 6,
                       VueJS, ElasticSearch
                     </p>
+                    <p>
+                      <strong>Design Toolkit:</strong> Stakeholder Interviews,
+                      Hand drawn Sketching, Hi-fi HTML Prototypes
+                    </p>
                     <div className="tags-list">
+                      <Tag text="Engineer" icon="develop" />
                       <Tag text="Design" icon="design" />
                       <Tag text="Prototype" icon="prototype" />
-                      <Tag text="Develop" icon="develop" />
                     </div>
                     <ContentModal buttonText="View More Info">
                       <div className="columns">
@@ -415,9 +426,9 @@ const Home: NextPage = () => {
                             6, VueJS, ElasticSearch
                           </p>
                           <div className="tags-list">
+                            <Tag text="Engineer" icon="develop" />
                             <Tag text="Design" icon="design" />
                             <Tag text="Prototype" icon="prototype" />
-                            <Tag text="Develop" icon="develop" />
                           </div>
                           <div className="column is-5">
                             <a
@@ -634,6 +645,7 @@ const Home: NextPage = () => {
                   <Annotation
                     className="hide-for-tablet"
                     text="One of the three collaborations I have done with Samya Arif. I highly recommend looking up her work!"
+                    textRotate="-15deg"
                     style={{
                       width: 310,
                       right: -30,
@@ -644,7 +656,9 @@ const Home: NextPage = () => {
                       rotate: '-65deg',
                       flip: true,
                     }}
-                    textRotate="-15deg"
+                    animProps={{
+                      onScroll: true,
+                    }}
                   />
                 </div>
               </div>
@@ -804,119 +818,16 @@ const Home: NextPage = () => {
                       translate: '-20px, 20px',
                       rotate: '8deg',
                     }}
+                    animProps={{
+                      onScroll: true,
+                    }}
                   />
                 </div>
               </div>
 
               <div className="prev-work-listing">
                 <div className="columns">
-                  <div className="column is-offset-one-fifth-desktop is-one-fifth-desktop is-offset-0-tablet is-two-fifths-tablet is-8-mobile image-holder">
-                    <img
-                      src="/images/logos/good-omen-films.svg"
-                      alt="Good Omen Films logo"
-                    />
-                  </div>
-                  <div className="column is-three-fifths">
-                    <h2>Filmmaking Brand & Website Re-Design</h2>
-                    <p>
-                      This filmmaking duo from Toronto needed to refresh their
-                      brand identity and to launch a new website for a major
-                      market push.
-                    </p>
-                    <p>
-                      <strong>Design Toolkit:</strong> Wireframing, Hi-Fi
-                      Prototypes
-                    </p>
-                    <p>
-                      <strong>Tech Stack:</strong> CSS, JQuery
-                    </p>
-                    <div className="tags-list">
-                      <Tag text="Design" icon="design" />
-                      <Tag text="Prototype" icon="prototype" />
-                      <Tag text="Develop" icon="develop" />
-                    </div>
-
-                    <ContentModal buttonText="View More Info">
-                      <div className="columns">
-                        <div className="column is-one-fifth-desktop is-two-fifths-tablet is-8-mobile">
-                          <img
-                            src="/images/logos/good-omen-films.svg"
-                            alt="Good Omen Films logo"
-                          />
-                        </div>
-                        <div className="column is-three-fifths">
-                          <h2>Filmmaking Brand & Website Re-Design</h2>
-                          <p>
-                            <strong>Client:</strong> Good Omen Films
-                          </p>
-                          <p>
-                            <strong>Duration:</strong> 2 Months
-                          </p>
-                          <p>
-                            <strong>Design Toolkit:</strong> Wireframing, Hi-Fi
-                            Prototypes
-                          </p>
-                          <p>
-                            <strong>Tech Stack:</strong> CSS, JQuery
-                          </p>
-                          <div className="tags-list">
-                            <Tag text="Design" icon="design" />
-                            <Tag text="Prototype" icon="prototype" />
-                            <Tag text="Develop" icon="develop" />
-                          </div>
-                          <div className="column is-5">
-                            <a
-                              className="button"
-                              href="http://www.goodomenfilms.com"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              View Live Website
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="columns">
-                        <div className="column is-half">
-                          <h2>Design</h2>
-                          <p>
-                            {`My co-founder Mustafa and I used client briefs to
-                            build a brand strategy and a website for Good Omen
-                            Films, working in tandem to deliver brand elements
-                            that aligned with the client's vision.`}
-                          </p>
-                        </div>
-                      </div>
-                      <div className="columns is-centered">
-                        <div className="column is-half">
-                          <ImageModal
-                            img={{
-                              src: '/images/j-work/good-omen-films/screen-01.jpg',
-                              alt: 'Good Omen Films Website Design',
-                            }}
-                          />
-                        </div>
-                      </div>
-                      <div className="columns is-reverse is-gapless">
-                        <div className="column is-3">
-                          <a
-                            className="button"
-                            href="http://goodomenfilms.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            View Live Website
-                          </a>
-                        </div>
-                      </div>
-                    </ContentModal>
-                  </div>
-                </div>
-              </div>
-
-              <div className="prev-work-listing">
-                <div className="columns">
-                  <div className="column is-one-fifth-desktop is-two-fiths-tablet is-8-mobile image-holder">
+                  <div className="column is-offset-one-fifth-desktop is-one-fifth-desktop is-offset-0-tablet is-two-fifths-tablet is-5-mobile image-holder">
                     <img
                       src="/images/logos/jellyfish.svg"
                       style={{ width: '100%' }}
@@ -955,16 +866,19 @@ const Home: NextPage = () => {
                   </div>
                   <Annotation
                     text="this was my firm! We worked to bring design thinking into a space where it was seldom heard of!"
+                    textRotate="-15deg"
                     style={{
                       width: 310,
                       left: 0,
-                      bottom: -247,
+                      bottom: -140,
                     }}
                     arrowProps={{
-                      translate: '30px, 270px',
-                      rotate: '220deg',
+                      translate: '180px, 320px',
+                      rotate: '-95deg',
                     }}
-                    textRotate="-15deg"
+                    animProps={{
+                      onScroll: true,
+                    }}
                   />
                 </div>
               </div>

@@ -8,53 +8,63 @@ import React, {
 import Vivus from 'vivus'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
-interface IArrowProps {
-  flip?: boolean
-  rotate?: string
-  size?: number
-  color?: string
-  translate?: string
-  thickness?: number
-}
-
 interface IAnnotationProps {
   text: string
-  className?: string
   speed?: number
-  arrowProps?: IArrowProps
-  animOffset?: number
-  animDelay?: number
+  className?: string
   textRotate?: string
-  animate?: boolean
   style?: CSSProperties
+  arrowProps?: {
+    flip?: boolean
+    rotate?: string
+    size?: number
+    color?: string
+    translate?: string
+    thickness?: number
+  }
+  animProps: {
+    animOffset?: number
+    animDelay?: number
+    animDuration?: number
+    initiallyVisible?: boolean
+    onScroll?: boolean
+  }
 }
 
 const Annotation = (props: IAnnotationProps): ReactElement => {
+  const { className, speed, arrowProps, animProps, textRotate, text, style } =
+    props
   const {
-    className,
-    speed,
-    arrowProps,
-    animOffset,
-    animDelay,
-    textRotate,
-    text,
-    style,
-  } = props
-
+    animDuration = 0.4,
+    animDelay = 0,
+    animOffset = 150,
+    onScroll,
+    initiallyVisible = false,
+  } = animProps
   const arrowRef = useRef<SVGSVGElement>(null)
+  const noScrollRef = useRef<HTMLDivElement>(null)
   const [vivusState, setVivusState] = useState<Vivus>()
 
   useEffect(() => {
     const currentRef = arrowRef.current as unknown as string // wonky type casting ?
     setVivusState(
       new Vivus(currentRef, {
-        duration: speed || 30,
+        duration: 30,
         type: 'oneByOne',
         pathTimingFunction: Vivus.EASE_IN,
         start: 'manual',
       })
     )
-  }, [arrowRef, speed])
+  }, [arrowRef, speed, animDelay, onScroll])
+
+  useEffect(() => {
+    if (!onScroll)
+      noScrollRef.current?.classList.add(
+        'animate__animated',
+        'animate__jackInTheBox',
+        'animate__delay-0.4s'
+      )
+  })
 
   const afterAnimate = () => vivusState?.play()
 
@@ -64,24 +74,41 @@ const Annotation = (props: IAnnotationProps): ReactElement => {
   if (arrowProps?.translate)
     arrowTransforms.push(`translate(${arrowProps.translate})`)
 
+  const Text = () => (
+    <div
+      className={`annotation-text`}
+      style={{ transform: `rotate(${textRotate})` }}
+    >
+      {text}
+    </div>
+  )
+
   return (
     <div id="annotation" style={style} className={className}>
-      <AnimationOnScroll
-        animateIn="animate__jackInTheBox"
-        offset={animOffset || 150}
-        delay={animDelay || 0}
-        afterAnimatedIn={afterAnimate}
-        animateOnce
-        duration={0.4}
-      >
-        <div
-          className="annotation-text"
-          style={{ transform: 'rotate(' + textRotate + ')' }}
+      {animProps.onScroll ? (
+        <AnimationOnScroll
+          animateIn="animate__jackInTheBox"
+          offset={animOffset}
+          delay={animDelay}
+          initiallyVisible={initiallyVisible}
+          afterAnimatedIn={afterAnimate}
+          duration={animDuration}
+          animateOnce
         >
-          {text}
+          <Text />
+        </AnimationOnScroll>
+      ) : (
+        <div
+          ref={noScrollRef}
+          onAnimationEnd={() => afterAnimate()}
+          style={{
+            animationDuration: `${animDuration}s`,
+            animationDelay: `${animDelay / 1000}s`,
+          }}
+        >
+          <Text />
         </div>
-      </AnimationOnScroll>
-
+      )}
       <svg
         ref={arrowRef}
         width={arrowProps?.size || 50}

@@ -9,9 +9,8 @@ const StudaoPage: NextPage = () => {
     <>
       <Head>
         <title>
-          Designing an online learning platform for Independent Filmmakers -
-          Talal Munzar - Designer, Developer, and Researcher of Digital
-          Experiences
+          An online learning platform for Independent Filmmakers - Talal Munzar
+          - Engineering human-centered & joyful digital experiences.
         </title>
         <meta
           name="description"
@@ -50,9 +49,9 @@ const StudaoPage: NextPage = () => {
                 </div>
 
                 <div className="tags-list is-hidden-mobile">
-                  <Tag text="Research" icon="research" />
                   <Tag text="Design" icon="design" />
                   <Tag text="Prototype" icon="prototype" />
+                  <Tag text="Research" icon="research" />
                 </div>
               </div>
               <div className="column">
@@ -133,6 +132,9 @@ const StudaoPage: NextPage = () => {
                   arrowProps={{
                     translate: '-120px, 40px',
                     rotate: '80deg',
+                  }}
+                  animProps={{
+                    onScroll: true,
                   }}
                   className="is-primary offset-margin-right-neg-20-tablet"
                 />
@@ -222,6 +224,9 @@ const StudaoPage: NextPage = () => {
                     translate: '-20px, 0',
                     rotate: '15deg',
                   }}
+                  animProps={{
+                    onScroll: true,
+                  }}
                 />
                 <Annotation
                   className="is-white"
@@ -236,6 +241,9 @@ const StudaoPage: NextPage = () => {
                     translate: '60px, 125px',
                     rotate: '-160deg',
                     flip: true,
+                  }}
+                  animProps={{
+                    onScroll: true,
                   }}
                 />
               </div>
@@ -286,6 +294,9 @@ const StudaoPage: NextPage = () => {
                     translate: '80px, 70px',
                     rotate: '-80deg',
                     flip: true,
+                  }}
+                  animProps={{
+                    onScroll: true,
                   }}
                 />
               </div>

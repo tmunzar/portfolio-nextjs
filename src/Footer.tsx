@@ -74,6 +74,9 @@ const Footer = (): ReactElement => {
                   translate: '-20px, 280px',
                   flip: true,
                 }}
+                animProps={{
+                  onScroll: true,
+                }}
               />
 
               <Annotation
@@ -88,7 +91,10 @@ const Footer = (): ReactElement => {
                   rotate: '130deg',
                   translate: '-10px, 80px',
                 }}
-                animDelay={300}
+                animProps={{
+                  animDelay: 300,
+                  onScroll: true,
+                }}
               />
 
               <Annotation
@@ -101,7 +107,10 @@ const Footer = (): ReactElement => {
                   rotate: '-80deg',
                   translate: '85px, 140px',
                 }}
-                animDelay={600}
+                animProps={{
+                  animDelay: 600,
+                  onScroll: true,
+                }}
               />
             </nav>
           </div>
@@ -110,8 +119,29 @@ const Footer = (): ReactElement => {
         <div className="columns is-centered">
           <div className="column source">
             <p>
-              This website is carefully crafted using pen & paper, figma, react,
-              nextjs, vivus.js, among other things.
+              This website was designed with pen, paper & figma, and engineered
+              using
+              <a href="https://nextjs.org/" className="no-highlight">
+                nextjs
+              </a>
+              ,{' '}
+              <a
+                href="https://bulma.io/"
+                target="blank"
+                className="no-highlight"
+              >
+                bulma.io
+              </a>{' '}
+              &{' '}
+              <a
+                href="https://maxwellito.github.io/vivus/"
+                target="_blank"
+                className="no-highlight"
+                rel="noreferrer"
+              >
+                vivus.js
+              </a>
+              .
             </p>
             <p>
               Find the source code{' '}

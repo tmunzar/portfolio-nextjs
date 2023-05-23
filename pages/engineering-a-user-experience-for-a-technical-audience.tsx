@@ -9,13 +9,10 @@ const StardogStudioPage: NextPage = () => {
     <>
       <Head>
         <title>
-          Doing UX in a B2B environment for a technical audience - Talal Munzar
-          - Designer, Developer, and Researcher of Digital Experiences
+          Engineering UX in a B2B environment for a technical audience - Talal
+          Munzar - Engineer, Designer, Developer of human-centered & joyful
+          digital experiences.
         </title>
-        <meta
-          name="description"
-          content="Talal Munzar - Designer, Developer, and Researcher of Digital Experiences"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article>
@@ -23,16 +20,18 @@ const StardogStudioPage: NextPage = () => {
           <div className="container">
             <div className="columns">
               <div className="column is-two-fifths">
-                <h1>Doing UX in a B2B environment for a technical audience</h1>
+                <h1>
+                  Engineering a User Experience for <br /> a technical audience
+                </h1>
                 <p>
-                  As a UX Intern at Stardog, I was tasked with designing the
-                  second interation of Stardog Studio after its first release
-                  failed.
+                  As a UX Engineer at Stardog, I was tasked to design &
+                  implement the second iteration of Stardog Studio after its
+                  first UI release failed with its audience.
                 </p>
 
                 <div className="details">
                   <p>
-                    <strong>Role:</strong> Intern
+                    <strong>Role:</strong> UX Engineer
                   </p>
                   <p>
                     <strong>Product:</strong> Stardog Studio
@@ -42,15 +41,14 @@ const StardogStudioPage: NextPage = () => {
                     Engineers, Front-End Engineers, Backend Engineers
                   </p>
                   <p>
-                    <strong>Duration:</strong> 3 Months (Summer 2018 Internship)
+                    <strong>Duration:</strong> 3 Months
                   </p>
                 </div>
 
                 <div className="tags-list is-hidden-mobile">
-                  <Tag text="Research" icon="research" />
+                  <Tag text="Engineer" icon="develop" />
                   <Tag text="Design" icon="design" />
                   <Tag text="Prototype" icon="prototype" />
-                  <Tag text="Develop" icon="develop" />
                 </div>
               </div>
               <div className="column">
@@ -89,9 +87,16 @@ const StardogStudioPage: NextPage = () => {
                   <p>
                     Stardog Studio’s first release was met with negative user
                     feedback as there was no user-centered process to settle on
-                    its design. The release featured a Jupyter-like notebook
-                    design, which as it turned out wasn’t how Stardog users
-                    preferred using Studio.
+                    its design. The release featured a{' '}
+                    <a
+                      href="https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Jupyter
+                    </a>
+                    -like notebook design, which as it turned out wasn’t how
+                    Stardog users preferred using Studio.
                   </p>
                   <p>
                     The challenge ahead was to ensure that the next iteration of
@@ -115,6 +120,9 @@ const StardogStudioPage: NextPage = () => {
                       left: 30,
                     }}
                     arrowProps={{ translate: '10px, 20px' }}
+                    animProps={{
+                      onScroll: true,
+                    }}
                     className="is-primary offset-margin-top-neg-20-tablet"
                   />
                   <Annotation
@@ -126,7 +134,10 @@ const StardogStudioPage: NextPage = () => {
                       left: -140,
                     }}
                     arrowProps={{ translate: '50px, 40px', rotate: '-40deg' }}
-                    animDelay={200}
+                    animProps={{
+                      animDelay: 200,
+                      onScroll: true,
+                    }}
                     className="is-primary offset-margin-top-neg-60-tablet"
                   />
                   <Annotation
@@ -142,7 +153,10 @@ const StardogStudioPage: NextPage = () => {
                       rotate: '20deg',
                       flip: true,
                     }}
-                    animDelay={400}
+                    animProps={{
+                      animDelay: 400,
+                      onScroll: true,
+                    }}
                     className="is-primary offset-margin-top-neg-40-tablet offset-margin-right-neg-20-tablet"
                   />
                 </div>
@@ -164,7 +178,7 @@ const StardogStudioPage: NextPage = () => {
                 />
               </div>
               <div className="column is-half">
-                <h2>How to conduct User Research without users?</h2>
+                <h2>How to gather user-data without users?</h2>
                 <p>
                   The tricky part about trying to do user research at a
                   Business-to-Business (B2B) organization is that you have
@@ -255,6 +269,9 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-110px, 0px',
                     flip: true,
                   }}
+                  animProps={{
+                    onScroll: true,
+                  }}
                   className="is-primary offset-margin-right-neg-40-tablet"
                 />
               </div>
@@ -296,6 +313,9 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-90px, 20px',
                     rotate: '20deg',
                     flip: true,
+                  }}
+                  animProps={{
+                    onScroll: true,
                   }}
                 />
               </div>
@@ -344,6 +364,9 @@ const StardogStudioPage: NextPage = () => {
                   arrowProps={{
                     translate: '-20px, -30px',
                   }}
+                  animProps={{
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -367,7 +390,10 @@ const StardogStudioPage: NextPage = () => {
                     rotate: '-25deg',
                     flip: true,
                   }}
-                  animDelay={500}
+                  animProps={{
+                    animDelay: 500,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -389,7 +415,10 @@ const StardogStudioPage: NextPage = () => {
                   arrowProps={{
                     translate: '-20px, -30px',
                   }}
-                  animDelay={1000}
+                  animProps={{
+                    animDelay: 1000,
+                    onScroll: true,
+                  }}
                 />
               </div>
             </div>
@@ -424,6 +453,9 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-20px, -30px',
                     rotate: '15deg',
                   }}
+                  animProps={{
+                    onScroll: true,
+                  }}
                 />
 
                 <Annotation
@@ -440,7 +472,10 @@ const StardogStudioPage: NextPage = () => {
                     rotate: '-50deg',
                     flip: true,
                   }}
-                  animDelay={300}
+                  animProps={{
+                    animDelay: 300,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -465,7 +500,10 @@ const StardogStudioPage: NextPage = () => {
                     rotate: '-45deg',
                     flip: true,
                   }}
-                  animDelay={400}
+                  animProps={{
+                    animDelay: 400,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -489,7 +527,10 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-50px, 60px',
                     rotate: '80deg',
                   }}
-                  animDelay={600}
+                  animProps={{
+                    animDelay: 600,
+                    onScroll: true,
+                  }}
                 />
               </div>
             </div>
@@ -524,6 +565,9 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-30px, -10px',
                     rotate: '15deg',
                   }}
+                  animProps={{
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -547,7 +591,10 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-30px, -10px',
                     rotate: '15deg',
                   }}
-                  animDelay={300}
+                  animProps={{
+                    animDelay: 300,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column relative">
@@ -571,7 +618,10 @@ const StardogStudioPage: NextPage = () => {
                     translate: '-30px, -10px',
                     rotate: '15deg',
                   }}
-                  animDelay={600}
+                  animProps={{
+                    animDelay: 600,
+                    onScroll: true,
+                  }}
                 />
               </div>
             </div>
@@ -600,6 +650,9 @@ const StardogStudioPage: NextPage = () => {
                   arrowProps={{
                     translate: '-90px, 30px',
                     rotate: '65deg',
+                  }}
+                  animProps={{
+                    onScroll: true,
                   }}
                 />
                 <p>
@@ -651,12 +704,10 @@ const StardogStudioPage: NextPage = () => {
               <div className="column">
                 <h2>The Final Implementation</h2>
                 <p>
-                  I then worked closely with the front-end engineering team to
-                  implement these design decisions. I engineered in an
-                  ElectronJS/React/Redux environment, using BlueprintJS for the
-                  core design system & SCSS to implement customized styling, as
-                  well as developing additional reusable design components for
-                  the application.
+                  I engineered the UI in an ElectronJS/React/Redux environment,
+                  using BlueprintJS for the core design system & SCSS to
+                  implement customized styling, as well as developing additional
+                  reusable UI components for the application.
                 </p>
               </div>
               <div className="column">

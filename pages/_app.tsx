@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          Talal Munzar - Designer, Developer, and Researcher of Digital
-          Experiences
+          Talal Munzar - Engineering human-centered & joyful digital
+          experiences.
         </title>
         <meta
           name="description"

@@ -18,7 +18,7 @@ const Loader = (): ReactElement => {
   useEffect(() => {
     const notFirstTime = localStorage.getItem('notFirstTime')
 
-    if (notFirstTime !== 'true') {
+    if (!notFirstTime) {
       new Vivus(
         'loader-svg',
         {
@@ -40,7 +40,7 @@ const Loader = (): ReactElement => {
         width="280"
         height="48"
         viewBox="0 0 139 23"
-        fill="none"
+        fill="#FE6955"
         xmlns="http://www.w3.org/2000/svg"
       >
         <defs>

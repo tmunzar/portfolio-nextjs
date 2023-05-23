@@ -28,23 +28,22 @@ const DESIGN_TAGS = [
 const ENGINEERING_TAGS = [
   'ReactJS',
   'TypeScript',
-  'SASS',
-  'LESS',
+  'Material UI',
+  'Styled Components',
+  'GraphQL',
   'VueJS',
+  'Redux',
+  'NodeJS',
   'Foundation',
   'Bootstrap',
-  'Javascript',
   'PHP',
   'Laravel',
   'CoffeeScript',
   'Ruby on Rails',
-  'AngularJS',
-  'Redux',
-  'NodeJS',
-  'Gulp',
   'Webpack',
   'MySQL',
-  'SPARQL',
+  'SASS',
+  'LESS',
 ]
 
 const About: NextPage = () => {
@@ -52,8 +51,8 @@ const About: NextPage = () => {
     <>
       <Head>
         <title>
-          About Me - Talal Munzar - Designer, Developer, and Researcher of
-          Digital Experiences
+          About Me - Talal Munzar - Engineering human-centered & joyful digital
+          experiences.
         </title>
       </Head>
       <article id="about">
@@ -61,11 +60,11 @@ const About: NextPage = () => {
           <div className="container">
             <div className="columns is-mobile">
               <div className="column is-half-tablet is-5-mobile">
-                <h1>Talal Munzar</h1>
+                <h1>{`I'm Talal Munzar,`}</h1>
                 <h2>
-                  Designer, Developer and Researcher
+                  {`and I've been engineering human-centered & joyful digital
+                  experiences for over a decade.`}
                   <br />
-                  of digital experiences
                 </h2>
               </div>
               <div className="column is-half-tablet is-6-mobile">
@@ -85,7 +84,7 @@ const About: NextPage = () => {
               <div className="column is-2-tablet is-4-mobile is-paddingless">
                 <Image
                   src="/images/about/faisal-masjid-doodle-01.png"
-                  alt="A sketch of the Faisal Mosque in Islamabad"
+                  alt="A pencil sketch of the Faisal Mosque in Islamabad"
                   width={183}
                   height={146}
                 />
@@ -108,13 +107,16 @@ const About: NextPage = () => {
                     rotate: '-95deg',
                     translate: '70px, 140px',
                   }}
-                  animDelay={300}
+                  animProps={{
+                    animDelay: 300,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column is-2-tablet is-4-mobile is-paddingless">
                 <Image
                   src="/images/about/minar-e-pakistan-doodle-01.png"
-                  alt="A sketch of the Minar-e-Pakistan in Lahore"
+                  alt="A pencil sketch of the Minar-e-Pakistan in Lahore"
                   width={294}
                   height={444}
                   layout="responsive"
@@ -138,13 +140,16 @@ const About: NextPage = () => {
                     rotate: '-110deg',
                     translate: '20px, 340px',
                   }}
-                  animDelay={700}
+                  animProps={{
+                    animDelay: 700,
+                    onScroll: true,
+                  }}
                 />
               </div>
               <div className="column is-2-tablet is-4-mobile is-paddingless">
                 <Image
                   src="/images/about/washington-monument-doodle-01.png"
-                  alt="A sketch of the Faisal Mosque in Islamabad"
+                  alt="A pencil sketch of the Washington Monument in Washington, DC"
                   width={121}
                   height={201}
                 />
@@ -154,16 +159,20 @@ const About: NextPage = () => {
             <div className="columns is-vcentered margin-top-100-mid is-reverse-mobile margin-top-50-mobile">
               <div className="column is-offset-3 is-5">
                 <p>
-                  I have been creating and designing digital experiences in one
-                  form or another for the past 9 years. I can do user research,
-                  sketch & draw, make wireframes, design, prototype, conduct
-                  usability tests, and develop.
+                  I have been carefully crafting digital experiences in one form
+                  or another for over a decade. I am an engineer, with
+                  significany full-stack experience, but a specialization in
+                  front-end engineering. Having worked closely with designers
+                  over the years, I have a keen eye for good visual design and a
+                  sense for seemless user experiences. With formal training in
+                  UX methodology, I also have the ability for user research,
+                  sketching, wireframeing, and prototyping.
                 </p>
               </div>
               <div className="column is-3 is-5-mobile">
                 <Image
                   src="/images/about/prototype-doodle-01.png"
-                  alt="A sketch of a prototype mobile application user-flow"
+                  alt="A pencil sketch of a mobile application user-flow chart"
                   width={183}
                   height={146}
                 />
@@ -177,9 +186,11 @@ const About: NextPage = () => {
             <div className="columns is-vcentered is-reverse-mobile">
               <div className="column is-offset-1 is-5">
                 <p>
-                  One of my biggest interests is teaching. I greatly enjoyed
-                  being a graduate teaching assistant for several programming
-                  courses at the University of Maryland. I also co-authored a{' '}
+                  One of my biggest side-interests is teaching programming, and
+                  making the field of computer science more accessible to
+                  everyone. I was a graduate teaching assistant for several
+                  programming courses at the University of Maryland. I also
+                  co-authored a{' '}
                   <a
                     href="https://www.researchgate.net/publication/331296366_Block-based_Comprehension_Exploring_and_Explaining_Student_Outcomes_from_a_Read-only_Block-based_Exam"
                     target="_blank"
@@ -193,7 +204,7 @@ const About: NextPage = () => {
               <div className="column is-2  is-5-mobile relative">
                 <Image
                   src="/images/about/teaching-doodle-01.png"
-                  alt="A sketch of a programming class in session"
+                  alt="A doodle of a teacher teaching a computer programming classroom"
                   width={183}
                   height={146}
                 />
@@ -204,13 +215,16 @@ const About: NextPage = () => {
                   style={{
                     width: 350,
                     right: 250,
-                    bottom: -210,
+                    bottom: -250,
                   }}
                   arrowProps={{
                     rotate: '-90deg',
                     translate: '175px, 340px',
                   }}
-                  animDelay={700}
+                  animProps={{
+                    animDelay: 700,
+                    onScroll: true,
+                  }}
                 />
               </div>
             </div>
@@ -219,9 +233,9 @@ const About: NextPage = () => {
               <div className="column is-offset-1 is-3 is-10-mobile">
                 <Image
                   src="/images/about/social-network-doodle-01.png"
-                  alt="A quick sketch of a social network"
-                  width={183}
-                  height={146}
+                  alt="A quick sketch of a social network, denoted by a graph network of images and media"
+                  width={340}
+                  height={155}
                 />
               </div>
               <div className="column is-5">
@@ -247,19 +261,19 @@ const About: NextPage = () => {
               </div>
             </div>
 
-            <div className="columns">
+            <div className="columns margin-top-50-mid">
               <div className="column is-2 text-center">
                 <Image
-                  src="/images/about/research-skills-doodle-01.png"
-                  alt="A doodle of user research related images (a bulb, a clipboard, a stopwatch, a manifying glass)"
-                  width={160}
-                  height={152}
+                  src="/images/about/engineering-skills-doodle-01.png"
+                  alt="A doodle of software engineering related icons (ReactJs icon, VueJS icon, an icon depicting coding, a finger tap)"
+                  width={150}
+                  height={142}
                 />
               </div>
               <div className="column is-6">
-                <h3>Research & Ideation</h3>
+                <h3>Engineering</h3>
                 <div className="tags-list">
-                  {RESEARCH_TAGS.map((t) => (
+                  {ENGINEERING_TAGS.map((t) => (
                     <Tag text={t} key={t} />
                   ))}
                 </div>
@@ -285,19 +299,19 @@ const About: NextPage = () => {
               </div>
             </div>
 
-            <div className="columns margin-top-50-mid">
+            <div className="columns">
               <div className="column is-2 text-center">
                 <Image
-                  src="/images/about/engineering-skills-doodle-01.png"
-                  alt="A doodle of software engineering related icons (ReactJs icon, VueJS icon, an icon depicting coding, a finger tap)"
-                  width={150}
-                  height={142}
+                  src="/images/about/research-skills-doodle-01.png"
+                  alt="A doodle of user research related images (a bulb, a clipboard, a stopwatch, a manifying glass)"
+                  width={160}
+                  height={152}
                 />
               </div>
               <div className="column is-6">
-                <h3>Engineering</h3>
+                <h3>Research & Ideation</h3>
                 <div className="tags-list">
-                  {ENGINEERING_TAGS.map((t) => (
+                  {RESEARCH_TAGS.map((t) => (
                     <Tag text={t} key={t} />
                   ))}
                 </div>

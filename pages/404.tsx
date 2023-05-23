@@ -6,14 +6,9 @@ const FourOFourPage: NextPage = () => {
     <>
       <Head>
         <title>
-          404 Page Not Found - Talal Munzar - Designer, Developr, and Researcher
-          of Digital Experiences
+          404 Page Not Found - Talal Munzar - Engineering human-centered &
+          joyful digital experiences.
         </title>
-        <meta
-          name="description"
-          content="Talal Munzar - Designer, Developer, and Researcher of Digital Experiences"
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <div id="404">
         <section className="is-light">
