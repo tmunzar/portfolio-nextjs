@@ -1,4 +1,5 @@
 import React, { ReactElement, useState } from 'react'
+import Button from './Button'
 import { CSSTransition } from 'react-transition-group'
 
 interface IContentModalProps {
@@ -14,12 +15,12 @@ const ContentModal = (props: IContentModalProps): ReactElement => {
 
   return (
     <>
-      <button
-        className="button column is-4-desktop is-6-tablet is-12-mobile"
+      <Button
+        className="column is-4-desktop is-6-tablet is-12-mobile"
         onClick={handleOnOpen}
       >
         {buttonText}
-      </button>
+      </Button>
       <CSSTransition
         in={isOpen}
         timeout={300}

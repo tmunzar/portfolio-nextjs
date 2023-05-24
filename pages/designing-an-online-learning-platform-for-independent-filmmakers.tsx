@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Tag from '../src/Tag'
-import ImageModal from '../src/ImageModal'
+import Link from 'next/link'
+
 import Annotation from '../src/Annotation'
+import Button from '../src/Button'
+import ImageModal from '../src/ImageModal'
+import Tag from '../src/Tag'
 
 const StudaoPage: NextPage = () => {
   return (
@@ -474,14 +477,14 @@ const StudaoPage: NextPage = () => {
             </div>
             <div className="columns is-reverse is-gapless">
               <div className="column is-3">
-                <a
-                  className="button"
+                <Link
                   href="https://projects.invisionapp.com/share/SWS3X9ODK4E#/screens/364666372_Value_Proposition"
                   target="_blank"
                   rel="noopener noreferrer"
+                  passHref
                 >
-                  Go to InVision Prototype
-                </a>
+                  <Button>Go to InVision Prototype</Button>
+                </Link>
               </div>
             </div>
           </div>

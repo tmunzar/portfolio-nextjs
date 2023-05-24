@@ -99,9 +99,9 @@ const Tag = (props: ITagProps): ReactElement => {
   }
 
   return (
-    <div className="tag">
+    <div className="tm-tag">
       <span>{text}</span>
-      {icon && <div className="tag-icon">{renderIcon()}</div>}
+      {icon && <div className="tm-tag-icon">{renderIcon()}</div>}
     </div>
   )
 }

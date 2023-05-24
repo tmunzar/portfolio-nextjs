@@ -1,6 +1,8 @@
 import type { NextPage } from 'next'
 import Annotation from '../src/Annotation'
 import Link from 'next/link'
+
+import Button from '../src/Button'
 import Tag from '../src/Tag'
 import ImageModal from '../src/ImageModal'
 import ContentModal from '../src/ContentModal'
@@ -131,9 +133,9 @@ const Home: NextPage = () => {
                       passHref
                       href="/engineering-a-user-experience-for-a-technical-audience"
                     >
-                      <button className="button column is-4-desktop is-6-tablet">
+                      <Button className="column is-4-desktop is-6-tablet">
                         View Case Study
-                      </button>
+                      </Button>
                     </Link>
                   </div>
                 </div>
@@ -169,9 +171,9 @@ const Home: NextPage = () => {
                       passHref
                       href="/designing-an-online-learning-platform-for-independent-filmmakers"
                     >
-                      <button className="button column is-4-desktop is-6-tablet">
+                      <Button className="column is-4-desktop is-6-tablet">
                         View Case Study
-                      </button>
+                      </Button>
                     </Link>
                   </div>
                 </div>
@@ -430,16 +432,6 @@ const Home: NextPage = () => {
                             <Tag text="Design" icon="design" />
                             <Tag text="Prototype" icon="prototype" />
                           </div>
-                          <div className="column is-5">
-                            <a
-                              className="button"
-                              href="http://rmi.edu.pk"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              View Live Website
-                            </a>
-                          </div>
                         </div>
                       </div>
                       <div className="columns margin-top-100-mid">
@@ -488,18 +480,6 @@ const Home: NextPage = () => {
                               alt: 'RMI Website design',
                             }}
                           />
-                        </div>
-                      </div>
-                      <div className="columns is-reverse is-gapless">
-                        <div className="column is-3">
-                          <a
-                            className="button"
-                            href="http://rmi.edu.pk"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            View Live Website
-                          </a>
                         </div>
                       </div>
                     </ContentModal>
@@ -564,14 +544,14 @@ const Home: NextPage = () => {
                             <Tag text="Develop" icon="develop" />
                           </div>
                           <div className="column is-5">
-                            <a
-                              className="button"
+                            <Link
                               href="http://www.kbcuratorial.com"
                               target="_blank"
                               rel="noopener noreferrer"
+                              passHref
                             >
-                              View Live Website
-                            </a>
+                              <Button>View Live Website</Button>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -580,13 +560,13 @@ const Home: NextPage = () => {
                           <h2>Designs</h2>
                           <p>
                             The designs were made by{' '}
-                            <a
+                            <Link
                               href="https://www.samyaarif.com"
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               Samya Arif
-                            </a>{' '}
+                            </Link>{' '}
                             to put an emphasis on the location and the artists
                             participating in the event.
                           </p>
@@ -630,14 +610,14 @@ const Home: NextPage = () => {
                       </div>
                       <div className="columns is-reverse is-gapless">
                         <div className="column is-3">
-                          <a
-                            className="button"
+                          <Link
                             href="http://www.kbcuratorial.com"
                             target="_blank"
                             rel="noopener noreferrer"
+                            passHref
                           >
-                            View Live Website
-                          </a>
+                            <Button>View Live Website</Button>
+                          </Link>
                         </div>
                       </div>
                     </ContentModal>
@@ -693,14 +673,16 @@ const Home: NextPage = () => {
                       <Tag text="Prototype" icon="prototype" />
                       <Tag text="Develop" icon="develop" />
                     </div>
-                    <a
+                    <Link
                       href="/demo/connectavo"
-                      className="button column is-4-desktop is-6-tablet"
                       target="_blank"
                       rel="noopener noreferrer"
+                      passHref
                     >
-                      View Prototype
-                    </a>
+                      <Button className="is-4-desktop is-6-tablet">
+                        View Prototype
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -855,14 +837,16 @@ const Home: NextPage = () => {
                       <Tag text="Prototype" icon="prototype" />
                       <Tag text="Develop" icon="develop" />
                     </div>
-                    <a
+                    <Link
                       href="http://jellyfish.com.pk"
-                      className="button column is-4-desktop is-6-tablet"
                       target="_blank"
                       rel="noopener noreferrer"
+                      passHref
                     >
-                      View Website
-                    </a>
+                      <Button className="column is-4-desktop is-6-tablet">
+                        View Website
+                      </Button>
+                    </Link>
                   </div>
                   <Annotation
                     text="this was my firm! We worked to bring design thinking into a space where it was seldom heard of!"

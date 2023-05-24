@@ -1,8 +1,11 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Tag from '../src/Tag'
-import ImageModal from '../src/ImageModal'
+import Link from 'next/link'
+
 import Annotation from '../src/Annotation'
+import Button from '../src/Button'
+import ImageModal from '../src/ImageModal'
+import Tag from '../src/Tag'
 
 const StardogStudioPage: NextPage = () => {
   return (
@@ -88,13 +91,13 @@ const StardogStudioPage: NextPage = () => {
                     Stardog Studio’s first release was met with negative user
                     feedback as there was no user-centered process to settle on
                     its design. The release featured a{' '}
-                    <a
+                    <Link
                       href="https://jupyter.org/try-jupyter/retro/notebooks/?path=notebooks/Intro.ipynb"
                       target="_blank"
                       rel="noreferrer"
                     >
                       Jupyter
-                    </a>
+                    </Link>
                     -like notebook design, which as it turned out wasn’t how
                     Stardog users preferred using Studio.
                   </p>
@@ -739,14 +742,14 @@ const StardogStudioPage: NextPage = () => {
             </div>
             <div className="columns is-reverse">
               <div className="column is-3">
-                <a
-                  className="button"
+                <Link
                   href="https://www.stardog.com/studio/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  passHref
                 >
-                  Go to Stardog Studio
-                </a>
+                  <Button>Go to Stardog Studio</Button>
+                </Link>
               </div>
             </div>
             <div className="columns"></div>

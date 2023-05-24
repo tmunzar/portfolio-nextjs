@@ -46,7 +46,7 @@ const ENGINEERING_TAGS = [
   'LESS',
 ]
 
-const About: NextPage = () => {
+const AboutPage: NextPage = () => {
   return (
     <>
       <Head>
@@ -326,4 +326,4 @@ const About: NextPage = () => {
   )
 }
 
-export default About
+export default AboutPage
