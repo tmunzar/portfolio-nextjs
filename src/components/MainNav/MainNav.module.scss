@@ -63,7 +63,7 @@
   }
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   #mainNav {
     .logo path {
       fill: $color-white;

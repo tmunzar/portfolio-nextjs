@@ -13,7 +13,7 @@ body {
   color: $color-black;
   transition: 0.7s background-color ease-in;
 }
-[data-theme='dark'] {
+html.dark {
   body {
     color: $color-white;
     background-color: $color-dm-secondary;
@@ -86,7 +86,7 @@ img {
   height: auto;
 }
 
-[data-theme='dark'] {
+html.dark {
   img.dm-invert {
     filter: brightness(0) invert(1);
   }
@@ -192,7 +192,8 @@ section {
   }
 }
 
-[data-theme='dark'] {
+html.dark {
+  header,
   section {
     transition: 0.7s background-color ease-in;
     &.is-primary {

@@ -57,7 +57,7 @@
   }
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   .darkModeButton {
     border-color: $color-white;
     svg path {

@@ -12,7 +12,7 @@ export const DarkModeToggle = (): ReactElement => {
   useEffect(() => {
     if (localStorage.getItem('theme')) {
       if (localStorage.getItem('theme') == 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark')
+        document.documentElement.classList.add('dark')
         setIsDarkMode(true)
       }
     }
@@ -43,15 +43,15 @@ export const DarkModeToggle = (): ReactElement => {
   }, [nightIconSvgRef])
 
   const onDarkModeToggle = () => {
-    if (document.documentElement.getAttribute('data-theme') === 'dark') {
-      document.documentElement.removeAttribute('data-theme')
+    if (document.documentElement.classList.contains('dark')) {
+      document.documentElement.classList.remove('dark')
       localStorage.setItem('theme', 'light')
       vivusDayIconState?.finish().play(-1, () => {
         setIsDarkMode(false)
         vivusNightIconState?.reset().play()
       })
     } else {
-      document.documentElement.setAttribute('data-theme', 'dark')
+      document.documentElement.classList.add('dark')
       localStorage.setItem('theme', 'dark')
       vivusNightIconState?.finish().play(-1, () => {
         setIsDarkMode(true)

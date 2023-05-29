@@ -18,7 +18,7 @@
   }
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   #homePage {
     #intro {
       background-color: $color-dm-secondary;

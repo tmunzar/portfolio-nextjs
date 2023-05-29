@@ -24,7 +24,7 @@
   }
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   #annotation {
     color: $color-white;
     svg.arrow {

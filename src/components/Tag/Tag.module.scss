@@ -17,7 +17,7 @@
   display: flex;
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   .tag {
     color: $color-black;
   }

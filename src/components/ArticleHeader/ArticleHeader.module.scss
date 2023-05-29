@@ -12,7 +12,7 @@
     margin: 0 auto 10px;
   }
 }
-[data-theme='dark'] {
+html:global(.dark) {
   .root {
     background-color: $color-dm-secondary-dark;
   }

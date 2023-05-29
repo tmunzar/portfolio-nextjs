@@ -16,7 +16,7 @@
   }
 }
 
-[data-theme='dark'] {
+html:global(.dark) {
   .img {
     &:hover {
       box-shadow: 0 0 10px #555;
