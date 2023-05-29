@@ -1,23 +1,29 @@
 import React, { ReactElement } from 'react'
-import Annotation from './Annotation'
+import Annotation from '../Annotation'
+import styles from './Footer.module.scss'
+import { cx } from '../../utils'
 
-const Footer = (): ReactElement => {
+export const Footer = (): ReactElement => {
   return (
-    <div id="footer">
+    <footer className={styles.footer}>
       <div className="container">
         <div className="columns heading is-centered">
-          <div className="column is-one-third heading-column hide-for-mobile">
-            <div className="line"></div>
+          <div
+            className={`column is-one-third hide-for-mobile ${styles.headingColumn}`}
+          >
+            <div className={styles.line}></div>
           </div>
-          <div className="column is-one-third heading-column">
+          <div className={`column is-one-third ${styles.headingColumn}`}>
             <h1 className="section-heading">Find Me Here</h1>
           </div>
-          <div className="column is-one-third heading-column hide-for-mobile">
-            <div className="line"></div>
+          <div
+            className={`column is-one-third hide-for-mobile ${styles.headingColumn}`}
+          >
+            <div className={styles.line}></div>
           </div>
         </div>
         <div className="columns is-centered">
-          <div className="column is-one-third footer-nav relative">
+          <div className={`column is-one-third relative ${styles.navColumn}`}>
             <nav>
               <a
                 href="mailto:tmunzar@gmail.com"
@@ -26,7 +32,7 @@ const Footer = (): ReactElement => {
               >
                 <span>
                   <img
-                    className="icon"
+                    className={cx(styles.icon, 'dm-invert')}
                     src="/images/envelope-doodle-01.png"
                     alt="email doodle"
                   />
@@ -40,7 +46,7 @@ const Footer = (): ReactElement => {
               >
                 <span>
                   <img
-                    className="icon prof"
+                    className={cx(styles.icon, styles.prof, 'dm-invert')}
                     src="/images/prof-doodle-01.png"
                     alt="linkedin doodle"
                   />
@@ -54,7 +60,7 @@ const Footer = (): ReactElement => {
               >
                 <span>
                   <img
-                    className="icon birdy"
+                    className={cx(styles.icon, styles.birdy, 'dm-invert')}
                     src="/images/birdy-doodle-01.png"
                     alt="linkedin doodle"
                   />
@@ -108,7 +114,8 @@ const Footer = (): ReactElement => {
                   translate: '85px, 140px',
                 }}
                 animProps={{
-                  animDelay: 600,
+                  animOffset: -100,
+                  animDelay: 700,
                   onScroll: true,
                 }}
               />
@@ -117,7 +124,7 @@ const Footer = (): ReactElement => {
         </div>
 
         <div className="columns is-centered">
-          <div className="column source">
+          <div className={cx(styles.source, 'column')}>
             <p>
               This website was designed with pen, paper & figma, and engineered
               using{' '}
@@ -157,13 +164,12 @@ const Footer = (): ReactElement => {
                 src="/images/octo-cat-01.png"
                 style={{ width: 30, paddingTop: 5 }}
                 alt="A sketched doodle of the Github OctoCat icon"
+                className="dm-invert"
               />
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
-
-export default Footer

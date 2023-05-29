@@ -11,7 +11,7 @@ const FourOFourPage: NextPage = () => {
         </title>
       </Head>
       <div id="404">
-        <section className="is-light">
+        <section className="is-secondary">
           <div className="container">
             <div className="columns is-centered">
               <h1>404 - Page not found</h1>

@@ -1,0 +1,13 @@
+@import '../../styles/theme.scss';
+
+.content {
+  background-color: $color-secondary;
+  padding: 40px 80px;
+  width: 75%;
+}
+
+[data-theme='dark'] {
+  .content {
+    background-color: $color-dm-secondary;
+  }
+}

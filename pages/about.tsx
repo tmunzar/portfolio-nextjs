@@ -2,8 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 
-import Annotation from '../src/Annotation'
-import Tag from '../src/Tag'
+import Annotation from '../src/components/Annotation'
+import Tag from '../src/components/Tag'
+
+import styles from './about.module.scss'
 
 const RESEARCH_TAGS = [
   'User Interviews',
@@ -55,8 +57,8 @@ const AboutPage: NextPage = () => {
           experiences.
         </title>
       </Head>
-      <article id="about">
-        <header className="is-light">
+      <article id={styles.about}>
+        <header className="is-secondary">
           <div className="container">
             <div className="columns is-mobile">
               <div className="column is-half-tablet is-5-mobile">
@@ -87,6 +89,7 @@ const AboutPage: NextPage = () => {
                   alt="A pencil sketch of the Faisal Mosque in Islamabad"
                   width={183}
                   height={146}
+                  className="dm-invert"
                 />
               </div>
             </div>
@@ -95,7 +98,7 @@ const AboutPage: NextPage = () => {
               <div className="column is-offset-4-tablet is-3-tablet is-8-mobile relative is-paddingless-tablet">
                 did my undergrad in Lahore...
                 <Annotation
-                  className="is-primary"
+                  color="primary"
                   text="in computer engineering"
                   textRotate="-10deg"
                   style={{
@@ -120,6 +123,7 @@ const AboutPage: NextPage = () => {
                   width={294}
                   height={444}
                   layout="responsive"
+                  className="dm-invert"
                 />
               </div>
             </div>
@@ -128,7 +132,7 @@ const AboutPage: NextPage = () => {
               <div className="column is-offset-2-tablet is-4-tablet is-8-mobile relative is-paddingless-tablet">
                 <p>... and now I&apos;m in the DC Area.</p>
                 <Annotation
-                  className="is-primary"
+                  color="primary"
                   text="where I did a Masters in Human-Computer Interaction at the University of Maryland!"
                   textRotate="-10deg"
                   style={{
@@ -152,6 +156,7 @@ const AboutPage: NextPage = () => {
                   alt="A pencil sketch of the Washington Monument in Washington, DC"
                   width={121}
                   height={201}
+                  className="dm-invert"
                 />
               </div>
             </div>
@@ -177,13 +182,14 @@ const AboutPage: NextPage = () => {
                   alt="A pencil sketch of a mobile application user-flow chart"
                   width={183}
                   height={146}
+                  className="dm-invert"
                 />
               </div>
             </div>
           </div>
         </header>
 
-        <section className="is-light interests">
+        <section className={`is-secondary ${styles.interests}`}>
           <div className="container">
             <div className="columns is-vcentered is-reverse-mobile">
               <div className="column is-offset-1 is-5">
@@ -203,15 +209,16 @@ const AboutPage: NextPage = () => {
                   on teaching computer programming using block-based methods.
                 </p>
               </div>
-              <div className="column is-2  is-5-mobile relative">
+              <div className="column is-2 is-5-mobile relative">
                 <Image
                   src="/images/about/teaching-doodle-01.png"
                   alt="A doodle of a teacher teaching a computer programming classroom"
                   width={183}
                   height={146}
+                  className="dm-invert"
                 />
                 <Annotation
-                  className="is-primary"
+                  color="primary"
                   text="teaching is a very UX-based process, where you design and teach while incorporating feedback on the fly!"
                   textRotate="-15deg"
                   style={{
@@ -270,6 +277,7 @@ const AboutPage: NextPage = () => {
                   alt="A doodle of software engineering related icons (ReactJs icon, VueJS icon, an icon depicting coding, a finger tap)"
                   width={150}
                   height={142}
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-6">
@@ -289,6 +297,7 @@ const AboutPage: NextPage = () => {
                   alt="A doodle of design tool related icons (a Figma icon, a SketchApp icon, a pencil, a digital pen-tool)"
                   width={150}
                   height={142}
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-6">
@@ -308,6 +317,7 @@ const AboutPage: NextPage = () => {
                   alt="A doodle of user research related images (a bulb, a clipboard, a stopwatch, a manifying glass)"
                   width={160}
                   height={152}
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-6">

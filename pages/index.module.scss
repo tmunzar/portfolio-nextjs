@@ -1,0 +1,80 @@
+@import '../src/styles/theme.scss';
+
+#homePage {
+  #intro {
+    padding-bottom: 0;
+    background-color: $color-secondary;
+    overflow: hidden;
+    .introHeading {
+      font-family: $body-font-family;
+      margin: 0;
+      font-size: 35px;
+    }
+    .introHeadingPrimary {
+      color: $color-primary;
+      font-weight: bold;
+      line-height: 1.2;
+    }
+  }
+}
+
+[data-theme='dark'] {
+  #homePage {
+    #intro {
+      background-color: $color-dm-secondary;
+    }
+  }
+  #prevWork {
+    background-color: $color-black;
+  }
+}
+
+@media (max-width: $tablet) {
+  #homePage {
+    #intro {
+      padding-bottom: 60px;
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  #homePage {
+    #intro {
+      height: 450px;
+    }
+  }
+}
+
+@media (min-width: 920px) {
+  #homePage {
+    #intro {
+      height: 550px;
+      .introHeading {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1125px) {
+  #homePage {
+    #intro {
+      padding-top: 100px;
+      height: 600px;
+      .introHeading {
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1500px) {
+  #homePage {
+    #intro {
+      height: 700px;
+    }
+  }
+}

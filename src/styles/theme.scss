@@ -1,0 +1,40 @@
+@import 'bulma/sass/utilities/_all.sass';
+
+$color-primary: #3c91df;
+$color-primary-dark: #1d6ab0;
+
+$color-secondary: #f6f8ee;
+$color-secondary-dark: #e0e4cc;
+
+$color-grey: #f2f2f2;
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-light-grey-dark-mode: #0d0d0d;
+
+$color-dm-primary: $color-primary;
+$color-dm-primary-dark: $color-primary-dark;
+
+$color-dm-secondary-light: #322c53;
+$color-dm-secondary: #1f1b33;
+$color-dm-secondary-dark: #090711;
+$color-dm-grey: #3f3f3f;
+
+$body-font-family: 'PT Sans', sans-serif;
+$header-font-family: 'DM Serif Display', serif;
+$cursive-font-family: 'Indie Flower', cursive;
+
+// The container horizontal gap, which acts as the offset for breakpoints
+// $gap: 32px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 768px !default;
+// // 960px container + 4rem
+$desktop: 961px + (2 * $gap);
+// // 1152px container + 4rem
+// $widescreen: 1152px + (2 * $gap) !default;
+// $widescreen-enabled: true !default;
+// // 1344px container + 4rem
+// $fullhd: 1344px + (2 * $gap) !default;
+// $fullhd-enabled: true !default;
+
+$modal-content-width: 90%;

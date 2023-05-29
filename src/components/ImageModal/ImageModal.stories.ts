@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import ImageModal from '../ImageModal'
-import HomeDoodle from '../../public/images/home-doodle-01.png'
+import HomeDoodle from '../../../public/images/home-doodle-01.png'
+import ImageModal from '.'
 
 const meta: Meta<typeof ImageModal> = {
   title: 'ImageModal',

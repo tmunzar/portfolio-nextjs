@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import ContentModal from '../ContentModal'
+import ContentModal from '.'
 
 const meta: Meta<typeof ContentModal> = {
   title: 'ContentModal',

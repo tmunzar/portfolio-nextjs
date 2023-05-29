@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Annotation from '../src/Annotation'
-import Button from '../src/Button'
-import ImageModal from '../src/ImageModal'
-import Tag from '../src/Tag'
+import Annotation from '../src/components/Annotation'
+import Button from '../src/components/Button'
+import ImageModal from '../src/components/ImageModal'
+import ArticleHeader from '../src/components/ArticleHeader'
 
 const StardogStudioPage: NextPage = () => {
   return (
@@ -19,52 +19,39 @@ const StardogStudioPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article>
-        <header>
-          <div className="container">
-            <div className="columns">
-              <div className="column is-two-fifths">
-                <h1>
-                  Engineering a User Experience for <br /> a technical audience
-                </h1>
-                <p>
-                  As a UX Engineer at Stardog, I was tasked to design &
+        <ArticleHeader
+          title={
+            <>
+              Engineering a User Experience for <br /> a technical audience
+            </>
+          }
+          description="As a UX Engineer at Stardog, I was tasked to design &
                   implement the second iteration of Stardog Studio after its
-                  first UI release failed with its audience.
-                </p>
-
-                <div className="details">
-                  <p>
-                    <strong>Role:</strong> UX Engineer
-                  </p>
-                  <p>
-                    <strong>Product:</strong> Stardog Studio
-                  </p>
-                  <p>
-                    <strong>Collaborators:</strong> Customer Success, Sales
-                    Engineers, Front-End Engineers, Backend Engineers
-                  </p>
-                  <p>
-                    <strong>Duration:</strong> 3 Months
-                  </p>
-                </div>
-
-                <div className="tags-list is-hidden-mobile">
-                  <Tag text="Engineer" icon="develop" />
-                  <Tag text="Design" icon="design" />
-                  <Tag text="Prototype" icon="prototype" />
-                </div>
-              </div>
-              <div className="column">
-                <ImageModal
-                  img={{
-                    src: '/images/stardog-studio/screen-01.jpg',
-                    alt: 'Stardog Studio Workspace',
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </header>
+                  first UI release failed with its audience."
+          img={{
+            src: '/images/stardog-studio/screen-01.jpg',
+            alt: 'Screen of the workspace section of Stardog Studio, a Graph Database querying application.',
+          }}
+          tags={[
+            { text: 'Engineer', icon: 'develop' },
+            { text: 'Design', icon: 'design' },
+            { text: 'Prototype', icon: 'prototype' },
+          ]}
+        >
+          <p>
+            <strong>Role:</strong> UX Engineer
+          </p>
+          <p>
+            <strong>Product:</strong> Stardog Studio
+          </p>
+          <p>
+            <strong>Collaborators:</strong> Customer Success, Sales Engineers,
+            Front-End Engineers, Backend Engineers
+          </p>
+          <p>
+            <strong>Duration:</strong> 3 Months
+          </p>
+        </ArticleHeader>
 
         <section>
           <div className="container">
@@ -113,6 +100,7 @@ const StardogStudioPage: NextPage = () => {
                   <img
                     src="/images/stardog-studio/stardog-query-diagram-01.png"
                     alt="A diagram of how Stardog can be queried, either via the Command Line or Stardog Studio."
+                    className="dm-invert"
                   />
                   <Annotation
                     text="this is where all the graph data is stored"
@@ -126,7 +114,8 @@ const StardogStudioPage: NextPage = () => {
                     animProps={{
                       onScroll: true,
                     }}
-                    className="is-primary offset-margin-top-neg-20-tablet"
+                    className="offset-margin-top-neg-20-tablet"
+                    color="primary"
                   />
                   <Annotation
                     text="this is where you can query the data from"
@@ -141,7 +130,8 @@ const StardogStudioPage: NextPage = () => {
                       animDelay: 200,
                       onScroll: true,
                     }}
-                    className="is-primary offset-margin-top-neg-60-tablet"
+                    className="offset-margin-top-neg-60-tablet"
+                    color="primary"
                   />
                   <Annotation
                     text="this is where you can also query your data, but more easily (or at least it should be)"
@@ -160,7 +150,8 @@ const StardogStudioPage: NextPage = () => {
                       animDelay: 400,
                       onScroll: true,
                     }}
-                    className="is-primary offset-margin-top-neg-40-tablet offset-margin-right-neg-20-tablet"
+                    color="primary"
+                    className="offset-margin-top-neg-40-tablet offset-margin-right-neg-20-tablet"
                   />
                 </div>
               </div>
@@ -217,6 +208,7 @@ const StardogStudioPage: NextPage = () => {
                 <img
                   src="/images/stardog-studio/cus-suc-doodle-01.png"
                   alt="A doodle of me interacting with customer success."
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-two-fifths">
@@ -234,6 +226,7 @@ const StardogStudioPage: NextPage = () => {
                   src="/images/stardog-studio/sales-team-doodle-01.png"
                   style={{ width: '80%' }}
                   alt="A doodle of the sales team."
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-two-fifths">
@@ -251,6 +244,7 @@ const StardogStudioPage: NextPage = () => {
                 <img
                   src="/images/stardog-studio/three-users-doodle-01.png"
                   alt="A doodle of 3 Stardog Studio end-users."
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-two-fifths relative">
@@ -275,14 +269,15 @@ const StardogStudioPage: NextPage = () => {
                   animProps={{
                     onScroll: true,
                   }}
-                  className="is-primary offset-margin-right-neg-40-tablet"
+                  className="offset-margin-right-neg-40-tablet"
+                  color="primary"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="is-light-grey">
+        <section className="is-grey">
           <div className="container">
             <div className="columns">
               <div className="column is-half">
@@ -363,7 +358,8 @@ const StardogStudioPage: NextPage = () => {
                     top: -120,
                     left: 70,
                   }}
-                  className="is-primary offset-margin-left-neg-100-tablet"
+                  className="offset-margin-left-neg-100-tablet"
+                  color="primary"
                   arrowProps={{
                     translate: '-20px, -30px',
                   }}
@@ -387,7 +383,7 @@ const StardogStudioPage: NextPage = () => {
                     top: -30,
                     left: 40,
                   }}
-                  className="is-primary"
+                  color="primary"
                   arrowProps={{
                     translate: '-25px, 0px',
                     rotate: '-25deg',
@@ -414,7 +410,7 @@ const StardogStudioPage: NextPage = () => {
                     top: -120,
                     left: 110,
                   }}
-                  className="is-primary"
+                  color="primary"
                   arrowProps={{
                     translate: '-20px, -30px',
                   }}
@@ -451,7 +447,7 @@ const StardogStudioPage: NextPage = () => {
                     top: -105,
                     left: 100,
                   }}
-                  className="is-primary"
+                  color="primary"
                   arrowProps={{
                     translate: '-20px, -30px',
                     rotate: '15deg',
@@ -469,7 +465,7 @@ const StardogStudioPage: NextPage = () => {
                     top: 100,
                     left: 110,
                   }}
-                  className="is-primary"
+                  color="primary"
                   arrowProps={{
                     translate: '85px, 20px',
                     rotate: '-50deg',
@@ -497,7 +493,8 @@ const StardogStudioPage: NextPage = () => {
                     top: -40,
                     left: 220,
                   }}
-                  className="is-primary offset-margin-left-neg-60-tablet"
+                  color="primary"
+                  className="offset-margin-left-neg-60-tablet"
                   arrowProps={{
                     translate: '90px, 20px',
                     rotate: '-45deg',
@@ -525,7 +522,8 @@ const StardogStudioPage: NextPage = () => {
                     top: -70,
                     left: 180,
                   }}
-                  className="is-primary offset-margin-left-neg-30-tablet offset-margin-top-neg-10-tablet"
+                  className="offset-margin-left-neg-30-tablet offset-margin-top-neg-10-tablet"
+                  color="primary"
                   arrowProps={{
                     translate: '-50px, 60px',
                     rotate: '80deg',
@@ -563,7 +561,8 @@ const StardogStudioPage: NextPage = () => {
                     top: -105,
                     left: 100,
                   }}
-                  className="is-primary offset-margin-left-neg-20-tablet"
+                  className="offset-margin-left-neg-20-tablet"
+                  color="primary"
                   arrowProps={{
                     translate: '-30px, -10px',
                     rotate: '15deg',
@@ -589,7 +588,8 @@ const StardogStudioPage: NextPage = () => {
                     top: -10,
                     left: 100,
                   }}
-                  className="is-primary offset-margin-left-neg-40-tablet offset-margin-top-neg-20-tablet"
+                  className="offset-margin-left-neg-40-tablet offset-margin-top-neg-20-tablet"
+                  color="primary"
                   arrowProps={{
                     translate: '-30px, -10px',
                     rotate: '15deg',
@@ -616,7 +616,7 @@ const StardogStudioPage: NextPage = () => {
                     top: -100,
                     left: 100,
                   }}
-                  className="is-primary"
+                  color="primary"
                   arrowProps={{
                     translate: '-30px, -10px',
                     rotate: '15deg',
@@ -644,7 +644,7 @@ const StardogStudioPage: NextPage = () => {
                 <Annotation
                   text="internal stakeholders were users considering the circumstances"
                   textRotate="-10deg"
-                  className="is-white"
+                  color="white"
                   style={{
                     width: 270,
                     right: -50,
@@ -701,7 +701,7 @@ const StardogStudioPage: NextPage = () => {
           </div>
         </section>
 
-        <section className="is-light">
+        <section className="is-secondary">
           <div className="container">
             <div className="columns">
               <div className="column">

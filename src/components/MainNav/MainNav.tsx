@@ -1,12 +1,15 @@
 import React, { ReactElement } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import DarkModeToggle from '../DarkModeToggle'
+import styles from './MainNav.module.scss'
+import { cx } from '../../utils'
 
-const MainNav = (): ReactElement => {
+export const MainNav = (): ReactElement => {
   const router = useRouter()
 
   return (
-    <div id="main-nav">
+    <div id={styles.mainNav}>
       <Link href="/#intro">
         <svg
           id="logo-svg"
@@ -15,7 +18,7 @@ const MainNav = (): ReactElement => {
           viewBox="0 0 140 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="logo"
+          className={styles.logo}
         >
           <path
             className="at-symbol"
@@ -56,12 +59,14 @@ const MainNav = (): ReactElement => {
         <ul>
           <li>
             <Link href="/#case-studies" passHref>
-              <a className={router.pathname == '/' ? 'active' : ''}>Work</a>
+              <a className={cx(router.pathname == '/' && styles.active)}>
+                Work
+              </a>
             </Link>
           </li>
           <li>
             <Link href="/about" passHref>
-              <a className={router.pathname == '/about' ? 'active' : ''}>
+              <a className={cx(router.pathname == '/about' && styles.active)}>
                 About
               </a>
             </Link>
@@ -88,8 +93,7 @@ const MainNav = (): ReactElement => {
           </li>
         </ul>
       </nav>
+      <DarkModeToggle />
     </div>
   )
 }
-
-export default MainNav

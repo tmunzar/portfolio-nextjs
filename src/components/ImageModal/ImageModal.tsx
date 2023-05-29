@@ -1,5 +1,7 @@
 import React, { CSSProperties, ReactElement, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
+import styles from './ImageModal.module.scss'
+import { cx } from '../../utils'
 
 interface IImageModalProps {
   img: {
@@ -7,10 +9,11 @@ interface IImageModalProps {
     alt: string
     style?: CSSProperties
   }
+  darkModeWhiteBg?: boolean
 }
 
-const ImageModal = (props: IImageModalProps): ReactElement => {
-  const { img } = props
+export const ImageModal = (props: IImageModalProps): ReactElement => {
+  const { img, darkModeWhiteBg } = props
 
   const [isOpen, setIsOpen] = useState<boolean>(false)
   const handleOnOpen = () => setIsOpen(true)
@@ -19,7 +22,7 @@ const ImageModal = (props: IImageModalProps): ReactElement => {
   return (
     <>
       <img
-        className="has-modal"
+        className={cx(styles.img, darkModeWhiteBg && styles.whiteBg)}
         src={img.src}
         alt={img.alt}
         onClick={handleOnOpen}
@@ -33,7 +36,7 @@ const ImageModal = (props: IImageModalProps): ReactElement => {
       >
         <div className="modal image-modal is-active">
           <div className="modal-background" onClick={handleOnClose}></div>
-          <div className="modal-content">
+          <div className={`modal-content ${styles.content}`}>
             <img src={img.src} alt={img.alt} />
           </div>
           <button
@@ -46,5 +49,3 @@ const ImageModal = (props: IImageModalProps): ReactElement => {
     </>
   )
 }
-
-export default ImageModal

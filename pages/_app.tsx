@@ -1,12 +1,13 @@
-import '../styles/globals.scss'
-import 'animate.css/animate.min.css'
 import type { AppProps } from 'next/app'
-import MainNav from '../src/MainNav'
-import Footer from '../src/Footer'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import Script from 'next/script'
+
+import { TransitionGroup, CSSTransition } from 'react-transition-group'
+
+import '../src/styles/globals.scss'
+import MainNav from '../src/components/MainNav'
+import Footer from '../src/components/Footer'
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()

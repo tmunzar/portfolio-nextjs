@@ -1,0 +1,42 @@
+@import '../../styles/theme.scss';
+#annotation {
+  font-family: $cursive-font-family;
+  font-size: 24px;
+  position: absolute;
+  color: $color-black;
+  text-align: left;
+  z-index: 1;
+  &.primary {
+    color: $color-primary-dark;
+    svg.arrow {
+      path {
+        stroke: $color-primary-dark;
+      }
+    }
+  }
+  &.white {
+    color: $color-white;
+    svg.arrow {
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+}
+
+[data-theme='dark'] {
+  #annotation {
+    color: $color-white;
+    svg.arrow {
+      path {
+        stroke: $color-white;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  #annotation {
+    display: none !important;
+  }
+}

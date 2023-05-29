@@ -2,10 +2,10 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import Annotation from '../src/Annotation'
-import Button from '../src/Button'
-import ImageModal from '../src/ImageModal'
-import Tag from '../src/Tag'
+import Annotation from '../src/components/Annotation'
+import Button from '../src/components/Button'
+import ImageModal from '../src/components/ImageModal'
+import ArticleHeader from '../src/components/ArticleHeader'
 
 const StudaoPage: NextPage = () => {
   return (
@@ -22,52 +22,35 @@ const StudaoPage: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <article>
-        <header>
-          <div className="container">
-            <div className="columns">
-              <div className="column is-two-fifths">
-                <h1>
-                  Designing an online learning platform for Independent
-                  Filmmakers
-                </h1>
-                <p>
-                  For my Masters Human-Computer Interaction Capstone Project, I
-                  designed an online learning platform for an industry client
-                  that sought to introduce the concept of certification to the
-                  independent film industry.
-                </p>
-
-                <div className="details">
-                  <p>
-                    <strong>Role:</strong> UX Researcher & Commiunications Lead
-                  </p>
-                  <p>
-                    <strong>Collaborators:</strong> Capstone Team of five other
-                    UX researchers and designers, Independent Filmmakers
-                  </p>
-                  <p>
-                    <strong>Duration:</strong> 9 Months (University of Maryland
-                    HCI-Masters Final Year Capstone Project)
-                  </p>
-                </div>
-
-                <div className="tags-list is-hidden-mobile">
-                  <Tag text="Design" icon="design" />
-                  <Tag text="Prototype" icon="prototype" />
-                  <Tag text="Research" icon="research" />
-                </div>
-              </div>
-              <div className="column">
-                <ImageModal
-                  img={{
-                    src: '/images/studao/main-01.png',
-                    alt: 'Filmmaker Learning Mobile app',
-                  }}
-                />
-              </div>
-            </div>
-          </div>
-        </header>
+        <ArticleHeader
+          title="Designing an online learning platform for Independent
+          Filmmakers"
+          description="For my Masters Human-Computer Interaction Capstone Project, I
+          designed an online learning platform for an industry client
+          that sought to introduce the concept of certification to the
+          independent film industry."
+          img={{
+            src: '/images/studao/main-01.png',
+            alt: 'Mobile Screens for StuDAO, an online learning platform for Independent Filmmakers',
+          }}
+          tags={[
+            { text: 'Design', icon: 'design' },
+            { text: 'Prototype', icon: 'prototype' },
+            { text: 'Research', icon: 'research' },
+          ]}
+        >
+          <p>
+            <strong>Role:</strong> UX Researcher & Commiunications Lead
+          </p>
+          <p>
+            <strong>Collaborators:</strong> Capstone Team of five other UX
+            researchers and designers, Independent Filmmakers
+          </p>
+          <p>
+            <strong>Duration:</strong> 9 Months (University of Maryland
+            HCI-Masters Final Year Capstone Project)
+          </p>
+        </ArticleHeader>
 
         <section>
           <div className="container">
@@ -89,6 +72,7 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/certificate-doodle-01.png"
                   alt="A sketch about certifications in the medical, finance and the law industries."
+                  className="dm-invert"
                 />
               </div>
             </div>
@@ -98,6 +82,7 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/clueless-filmmaker-doodle-01.png"
                   alt="A sketch about a clueless aspiring filmmaker."
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-offset-1 is-4">
@@ -123,6 +108,7 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/investor-doodle-01.png"
                   alt="A sketch about a clueless aspiring filmmaker."
+                  className="dm-invert"
                 />
                 <Annotation
                   text="I can never be as fashionable as this dude ..."
@@ -139,7 +125,8 @@ const StudaoPage: NextPage = () => {
                   animProps={{
                     onScroll: true,
                   }}
-                  className="is-primary offset-margin-right-neg-20-tablet"
+                  className="offset-margin-right-neg-20-tablet"
+                  color="primary"
                 />
               </div>
             </div>
@@ -215,7 +202,7 @@ const StudaoPage: NextPage = () => {
                   alt="A sketch about an outsider trying to get access to the film industry."
                 />
                 <Annotation
-                  className="is-white"
+                  color="white"
                   text="this is an outsider trying to get in"
                   textRotate="-20deg"
                   style={{
@@ -232,7 +219,7 @@ const StudaoPage: NextPage = () => {
                   }}
                 />
                 <Annotation
-                  className="is-white"
+                  color="white"
                   textRotate="-15deg"
                   text="that's the proverbial wall!"
                   style={{
@@ -283,10 +270,11 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/self-paced-expert-doodle-01.png"
                   alt="A sketch about self-paced learning and expert sources of information."
+                  className="dm-invert"
                 />
                 <Annotation
                   text="She seems fairly reputable don’t you think?"
-                  className="is-primary"
+                  color="primary"
                   textRotate="-15deg"
                   style={{
                     width: 200,
@@ -310,6 +298,7 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/biz-learning-doodle-01.png"
                   alt="A sketch a bored film student trying to learn business skills."
+                  className="dm-invert"
                 />
               </div>
               <div className="column is-offset-1 is-4">
@@ -333,13 +322,14 @@ const StudaoPage: NextPage = () => {
                 <img
                   src="images/studao/on-set-doodle-01.png"
                   alt="A sketch of a film student learning by being on set"
+                  className="dm-invert"
                 />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="is-light-grey">
+        <section className="is-grey">
           <div className="container">
             <div className="columns">
               <div className="column is-half">
@@ -423,7 +413,7 @@ const StudaoPage: NextPage = () => {
           </div>
         </section>
 
-        <section className="is-light">
+        <section className="is-secondary">
           <div className="container">
             <div className="columns">
               <div className="column is-half">
@@ -452,6 +442,7 @@ const StudaoPage: NextPage = () => {
                     src: 'images/studao/hifi-prototype-01.png',
                     alt: 'Hi-fi prototype images',
                   }}
+                  darkModeWhiteBg
                 />
               </div>
             </div>
@@ -462,6 +453,7 @@ const StudaoPage: NextPage = () => {
                     src: 'images/studao/hifi-prototype-02.png',
                     alt: 'Hi-fi prototype images',
                   }}
+                  darkModeWhiteBg
                 />
               </div>
             </div>
@@ -472,6 +464,7 @@ const StudaoPage: NextPage = () => {
                     src: 'images/studao/hifi-prototype-03.png',
                     alt: 'Hi-fi prototype images',
                   }}
+                  darkModeWhiteBg
                 />
               </div>
             </div>

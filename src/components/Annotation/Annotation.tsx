@@ -7,11 +7,14 @@ import React, {
 } from 'react'
 import Vivus from 'vivus'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
+import { cx } from '../../utils'
+import styles from './Annotation.module.scss'
 
 interface IAnnotationProps {
   text: string
   speed?: number
   className?: string
+  color?: 'default' | 'primary' | 'white'
   textRotate?: string
   style?: CSSProperties
   arrowProps?: {
@@ -31,9 +34,17 @@ interface IAnnotationProps {
   }
 }
 
-const Annotation = (props: IAnnotationProps): ReactElement => {
-  const { className, speed, arrowProps, animProps, textRotate, text, style } =
-    props
+export const Annotation = (props: IAnnotationProps): ReactElement => {
+  const {
+    speed,
+    arrowProps,
+    animProps,
+    textRotate,
+    text,
+    color = 'default',
+    style,
+    className,
+  } = props
   const {
     animDuration = 0.4,
     animDelay = 0,
@@ -84,7 +95,11 @@ const Annotation = (props: IAnnotationProps): ReactElement => {
   )
 
   return (
-    <div id="annotation" style={style} className={className}>
+    <div
+      id={styles.annotation}
+      style={style}
+      className={cx(styles[color], className)}
+    >
       {animProps.onScroll ? (
         <AnimationOnScroll
           animateIn="animate__jackInTheBox"
@@ -116,7 +131,7 @@ const Annotation = (props: IAnnotationProps): ReactElement => {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         style={{ transform: arrowTransforms.join(' ') }}
-        className="arrow"
+        className={styles.arrow}
       >
         <path
           strokeLinecap="round"
@@ -136,5 +151,3 @@ const Annotation = (props: IAnnotationProps): ReactElement => {
     </div>
   )
 }
-
-export default Annotation

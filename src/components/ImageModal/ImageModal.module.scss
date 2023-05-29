@@ -1,0 +1,28 @@
+@import '../../styles/theme.scss';
+.content {
+  background-color: $color-white;
+  text-align: center;
+  padding: 20;
+}
+
+.img {
+  cursor: pointer;
+  padding: 8px 4px;
+  border-radius: 8px;
+  transition: 0.1s box-shadow linear, 0.1s transform linear;
+  &:hover {
+    box-shadow: 0 0 10px #ddd;
+    transform: scale(1.01);
+  }
+}
+
+[data-theme='dark'] {
+  .img {
+    &:hover {
+      box-shadow: 0 0 10px #555;
+    }
+  }
+  .whiteBg {
+    background-color: $color-white;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../src/styles/theme.scss';
+
+#about {
+  .interests {
+    padding-top: 0;
+    background-image: url('/images/about/me-with-cup-01.png');
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    h3 {
+      margin: 0 0 10px;
+    }
+    @media (max-width: $tablet) {
+      padding-bottom: 400px;
+    }
+  }
+}

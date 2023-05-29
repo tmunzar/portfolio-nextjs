@@ -1,0 +1,19 @@
+@import '../../styles/theme.scss';
+
+.root {
+  background-color: $color-secondary;
+  padding: 120px 0;
+}
+.description {
+  margin-bottom: 25px;
+}
+.details {
+  p {
+    margin: 0 auto 10px;
+  }
+}
+[data-theme='dark'] {
+  .root {
+    background-color: $color-dm-secondary-dark;
+  }
+}

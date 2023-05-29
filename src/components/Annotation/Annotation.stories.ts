@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import Annotation from '../Annotation'
+import Annotation from '.'
 
 const meta: Meta<typeof Annotation> = {
   title: 'Annotation',
   component: Annotation,
-  // tags: ['autodocs'],
+  tags: ['autodocs'],
   argTypes: {
     text: {
       control: 'text',
@@ -14,12 +14,6 @@ const meta: Meta<typeof Annotation> = {
     },
     animProps: {
       control: 'object',
-      // onScroll: {
-      //   control: 'radio',
-      // },
-    },
-    className: {
-      control: 'disabled',
     },
     speed: {
       control: 'number',
@@ -43,6 +37,6 @@ export const PrimaryColor: Story = {
     text: 'Hello!',
     textRotate: '',
     animProps: { onScroll: false },
-    className: 'is-primary',
+    color: 'primary',
   },
 }
