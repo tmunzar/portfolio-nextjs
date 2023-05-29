@@ -102,4 +102,21 @@
     font-size: 16px;
     color: rgba($color-white, 0.45);
   }
+
+  .navColumn {
+    nav {
+      a {
+        color: $color-secondary;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .source {
+    a {
+      color: $color-primary;
+    }
+  }
 }
