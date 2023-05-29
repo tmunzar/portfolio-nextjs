@@ -45,6 +45,17 @@
     font-size: 14px;
   }
 }
+@media (max-width: $tablet) {
+  .root {
+    left: auto;
+    right: 16px;
+    flex-direction: row-reverse;
+  }
+
+  .tooltip {
+    margin-right: 4px;
+  }
+}
 
 [data-theme='dark'] {
   .darkModeButton {

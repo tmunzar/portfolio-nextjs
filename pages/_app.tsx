@@ -1,3 +1,4 @@
+import '../src/styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
@@ -5,7 +6,6 @@ import Script from 'next/script'
 
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 
-import '../src/styles/globals.scss'
 import MainNav from '../src/components/MainNav'
 import Footer from '../src/components/Footer'
 

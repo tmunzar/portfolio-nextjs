@@ -1,4 +1,3 @@
-import Annotation from '../Annotation'
 import WorkListing from '../WorkListing'
 import ImageModal from '../ImageModal'
 import ContentModal from '../ContentModal'

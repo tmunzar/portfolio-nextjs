@@ -1,13 +1,30 @@
+@import '../../styles/theme.scss';
+
 .articleListing {
   margin-bottom: 80px;
 }
 
 .title {
   margin: 0 0 10px;
+  @media (max-width: $tablet) {
+    br {
+      display: none;
+    }
+  }
 }
 .description {
   margin: 0 0 10px;
 }
 .tagsList {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  @media (max-width: $tablet) {
+    margin-bottom: 4px;
+  }
+}
+
+.actions {
+  @media (max-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-
 @import './theme.scss';
+
 @import 'animate.css/animate.min.css';
 
 @import 'bulma/sass/grid/columns.sass';
@@ -104,12 +101,10 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 90%;
   position: relative;
 }
 
 .columns {
-  max-width: 100%;
   &.is-reverse {
     flex-direction: row-reverse;
   }
@@ -172,8 +167,8 @@ article {
     padding: 120px 0;
   }
 }
-section {
-  padding: 120px 0;
+section,
+header {
   &.is-primary {
     background-color: $color-primary;
     color: $color-white;
@@ -184,6 +179,10 @@ section {
   &.is-grey {
     background-color: $color-grey;
   }
+}
+section {
+  padding: 120px 0;
+
   &:last-of-type {
     padding-bottom: 250px;
   }
@@ -252,6 +251,14 @@ section {
 
   .hide-for-mobile {
     display: none !important;
+  }
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .columns {
+    max-width: 100%;
+    margin: 0 auto;
   }
 }
 

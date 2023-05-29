@@ -40,11 +40,11 @@ export const ArticleListing = (props: IArticleListingProps): ReactElement => {
               <Tag {...tag} />
             ))}
           </div>
-          <Link passHref href={href}>
-            <Button className="column is-4-desktop is-6-tablet">
-              {actionText}
-            </Button>
-          </Link>
+          <div className={styles.actions}>
+            <Link passHref href={href}>
+              <Button>{actionText}</Button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

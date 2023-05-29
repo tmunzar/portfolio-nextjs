@@ -8,6 +8,7 @@
 
   .logo {
     margin-bottom: 30px;
+    cursor: pointer;
   }
 
   nav {
@@ -72,6 +73,11 @@
         color: lighten($color-primary, 10%);
         text-decoration: underline;
       }
+    }
+
+    @media (max-width: $tablet) {
+      background-color: $color-black;
+      box-shadow: 0 0 3px #444;
     }
   }
 }

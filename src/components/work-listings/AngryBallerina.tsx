@@ -3,8 +3,6 @@ import WorkListing from '../WorkListing'
 import ImageModal from '../ImageModal'
 import ContentModal from '../ContentModal'
 import Tag from '../Tag'
-import Link from 'next/link'
-import Button from '../Button'
 
 const AngryBallerinaListing = () => {
   return (
