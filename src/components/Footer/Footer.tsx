@@ -151,7 +151,7 @@ export const Footer = (): ReactElement => {
               .
             </p>
             <p>
-              Check out the{' '}
+              You can find the{' '}
               <a
                 href="https://github.com/tmunzar/portfolio-nextjs"
                 target="_blank"
@@ -159,13 +159,13 @@ export const Footer = (): ReactElement => {
               >
                 source code
               </a>
-              .
               <img
                 src="/images/octo-cat-01.png"
                 style={{ width: 30, paddingTop: 5 }}
                 alt="A sketched doodle of the Github OctoCat icon"
                 className="dm-invert"
               />
+              here, or check out the <a href="/storybook">storybook</a>.
             </p>
           </div>
         </div>
