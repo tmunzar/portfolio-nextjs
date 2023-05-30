@@ -31,5 +31,6 @@ export const Default: Story = {
       alt: 'A doodle of a collection of web development & design related images',
       style: { maxWidth: '300px' },
     },
+    darkModeWhiteBg: true,
   },
 }

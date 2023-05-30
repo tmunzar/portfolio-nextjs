@@ -12,7 +12,9 @@ const preview: Preview = {
     },
     darkMode: {
       classTarget: 'html',
+      stylePreview: true,
     },
+    layout: 'centered',
   },
 }
 
