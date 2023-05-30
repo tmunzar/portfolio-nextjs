@@ -69,7 +69,7 @@ const AboutPage: NextPage = () => {
                   <br />
                 </h2>
               </div>
-              <div className="column is-half-tablet is-6-mobile">
+              <div className="column is-half-tablet">
                 <Image
                   src="/images/about/me-in-a-circle-02.png"
                   alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
@@ -83,7 +83,7 @@ const AboutPage: NextPage = () => {
               <div className="column is-offset-1-tablet is-3-tablet is-8-mobile is-paddingless-tablet">
                 <p>I&apos;m originally from Islamabad ...</p>
               </div>
-              <div className="column is-2-tablet is-4-mobile is-paddingless">
+              <div className="column is-2-tablet is-paddingless">
                 <Image
                   src="/images/about/faisal-masjid-doodle-01.png"
                   alt="A pencil sketch of the Faisal Mosque in Islamabad"
@@ -116,7 +116,7 @@ const AboutPage: NextPage = () => {
                   }}
                 />
               </div>
-              <div className="column is-2-tablet is-4-mobile is-paddingless">
+              <div className="column is-2-tablet is-paddingless">
                 <Image
                   src="/images/about/minar-e-pakistan-doodle-01.png"
                   alt="A pencil sketch of the Minar-e-Pakistan in Lahore"
@@ -150,7 +150,7 @@ const AboutPage: NextPage = () => {
                   }}
                 />
               </div>
-              <div className="column is-2-tablet is-4-mobile is-paddingless">
+              <div className="column is-2-tablet is-paddingless">
                 <Image
                   src="/images/about/washington-monument-doodle-01.png"
                   alt="A pencil sketch of the Washington Monument in Washington, DC"
@@ -161,8 +161,8 @@ const AboutPage: NextPage = () => {
               </div>
             </div>
 
-            <div className="columns is-vcentered margin-top-100-mid is-reverse-mobile margin-top-50-mobile">
-              <div className="column is-offset-3 is-5">
+            <div className="columns is-vcentered margin-top-100-mid margin-top-50-mobile">
+              <div className="column is-tablet-offset-3 is-tablet-5">
                 <p>
                   I have been carefully crafting digital experiences in one form
                   or another for over a decade. I have background in full-stack
@@ -176,7 +176,7 @@ const AboutPage: NextPage = () => {
                   sketching, wireframeing, and prototyping.
                 </p>
               </div>
-              <div className="column is-3 is-5-mobile">
+              <div className="column is-3 is-hidden-mobile">
                 <Image
                   src="/images/about/prototype-doodle-01.png"
                   alt="A pencil sketch of a mobile application user-flow chart"
@@ -269,9 +269,41 @@ const AboutPage: NextPage = () => {
                 <h2>My Skillset</h2>
               </div>
             </div>
+            <div
+              className="columns show-only-for-mobile is-mobile"
+              style={{ marginTop: -30 }}
+            >
+              <div className="column is-3 text-center">
+                <Image
+                  src="/images/about/engineering-skills-doodle-01.png"
+                  alt="A doodle of software engineering related icons (ReactJs icon, VueJS icon, an icon depicting coding, a finger tap)"
+                  width={150}
+                  height={142}
+                  className="dm-invert"
+                />
+              </div>
+              <div className="column is-3 text-center">
+                <Image
+                  src="/images/about/design-skills-doodle-01.png"
+                  alt="A doodle of design tool related icons (a Figma icon, a SketchApp icon, a pencil, a digital pen-tool)"
+                  width={150}
+                  height={142}
+                  className="dm-invert"
+                />
+              </div>
+              <div className="column is-3 text-center">
+                <Image
+                  src="/images/about/research-skills-doodle-01.png"
+                  alt="A doodle of user research related images (a bulb, a clipboard, a stopwatch, a manifying glass)"
+                  width={160}
+                  height={152}
+                  className="dm-invert"
+                />
+              </div>
+            </div>
 
             <div className="columns margin-top-50-mid">
-              <div className="column is-2 text-center">
+              <div className="column is-2 text-center is-hidden-mobile">
                 <Image
                   src="/images/about/engineering-skills-doodle-01.png"
                   alt="A doodle of software engineering related icons (ReactJs icon, VueJS icon, an icon depicting coding, a finger tap)"
@@ -291,7 +323,7 @@ const AboutPage: NextPage = () => {
             </div>
 
             <div className="columns margin-top-50-mid">
-              <div className="column is-2 text-center">
+              <div className="column is-2 text-center is-hidden-mobile">
                 <Image
                   src="/images/about/design-skills-doodle-01.png"
                   alt="A doodle of design tool related icons (a Figma icon, a SketchApp icon, a pencil, a digital pen-tool)"
@@ -311,7 +343,7 @@ const AboutPage: NextPage = () => {
             </div>
 
             <div className="columns">
-              <div className="column is-2 text-center">
+              <div className="column is-2 text-center is-hidden-mobile">
                 <Image
                   src="/images/about/research-skills-doodle-01.png"
                   alt="A doodle of user research related images (a bulb, a clipboard, a stopwatch, a manifying glass)"
