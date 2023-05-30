@@ -62,7 +62,11 @@ export const DarkModeToggle = (): ReactElement => {
 
   return (
     <div className={styles.root}>
-      <button onClick={onDarkModeToggle} className={styles.darkModeButton}>
+      <button
+        onClick={onDarkModeToggle}
+        className={styles.darkModeButton}
+        aria-label="Toggle Dark Mode"
+      >
         <svg
           width="28"
           height="28"

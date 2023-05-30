@@ -41,6 +41,15 @@ a.no-highlight {
   }
 }
 
+html.dark {
+  a {
+    color: $color-primary;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 h1,
 h2,
 h3,

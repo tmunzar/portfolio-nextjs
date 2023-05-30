@@ -77,7 +77,7 @@
 
 .source {
   font-size: 16px;
-  color: rgba($color-black, 0.45);
+  color: rgba($color-black, 0.75);
   text-align: center;
   margin-top: 50px;
   p {
@@ -100,7 +100,7 @@ html:global(.dark) {
   }
   .source {
     font-size: 16px;
-    color: rgba($color-white, 0.45);
+    color: rgba($color-white, 0.75);
   }
 
   .navColumn {

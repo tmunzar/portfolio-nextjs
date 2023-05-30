@@ -151,13 +151,13 @@ export const Footer = (): ReactElement => {
               .
             </p>
             <p>
-              Find the source code{' '}
+              Check out the{' '}
               <a
                 href="https://github.com/tmunzar/portfolio-nextjs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                here
+                source code
               </a>
               .
               <img
