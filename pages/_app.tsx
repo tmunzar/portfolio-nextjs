@@ -22,14 +22,12 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="description"
           content="Talal Munzar - Designer, Developer, and Researcher of Digital Experiences"
         />
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/logo192.png"></link>
-        <meta property="og:title" content="Talal Munzar" />
         <meta
           name="twitter:title"
           content="Designer, Developer, and Researcher of Digital
           Experiences"
         />
+        <meta property="og:title" content="Talal Munzar" />
         <meta property="og:image" content="/logo512.png" />
         <meta name="viewport" content="width=device-width" />
       </Head>
