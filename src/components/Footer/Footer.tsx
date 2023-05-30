@@ -165,7 +165,11 @@ export const Footer = (): ReactElement => {
                 alt="A sketched doodle of the Github OctoCat icon"
                 className="dm-invert"
               />
-              here, or check out the <a href="/storybook">storybook</a>.
+              here, or check out the{' '}
+              <a href="/storybook" target="_blank">
+                storybook
+              </a>
+              .
             </p>
           </div>
         </div>
