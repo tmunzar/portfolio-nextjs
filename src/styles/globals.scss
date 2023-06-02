@@ -43,7 +43,7 @@ a.no-highlight {
 
 html.dark {
   a {
-    color: $color-primary;
+    color: $color-primary-light;
     &:hover {
       text-decoration: underline;
     }
@@ -61,6 +61,19 @@ h6 {
   a {
     color: inherit;
     text-decoration: none;
+  }
+}
+
+html.dark {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    a {
+      color: inherit;
+    }
   }
 }
 

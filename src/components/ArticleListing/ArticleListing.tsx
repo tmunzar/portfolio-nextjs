@@ -1,4 +1,5 @@
 import { ReactElement } from 'react'
+import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../Button'
 import Tag, { ITagProps } from '../Tag'
@@ -8,7 +9,7 @@ interface IArticleListingProps {
   title: string | React.ReactNode
   description: string
   href: string
-  img: { src: string; alt: string }
+  img: { src: string; alt: string; width: number; height: number }
   tags: ITagProps[]
   actionText?: string
 }
@@ -26,7 +27,7 @@ export const ArticleListing = (props: IArticleListingProps): ReactElement => {
     <div className={styles.articleListing}>
       <div className="columns">
         <div className="column is-two-fifths">
-          <img src={img.src} alt={img.alt} />
+          <Image {...img} />
         </div>
         <div className="column">
           <h2 className={styles.title}>

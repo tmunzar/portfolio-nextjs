@@ -45,6 +45,8 @@ export const Default: Story = {
     img: {
       src: Img.src,
       alt: 'A doodle of a collection of web development & design related images',
+      width: Img.width,
+      height: Img.height,
     },
     tags: [
       { text: 'Engineer', icon: 'develop' },

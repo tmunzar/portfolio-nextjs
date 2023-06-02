@@ -1,6 +1,7 @@
 import React, { ReactElement } from 'react'
 import Annotation from '../Annotation'
 import styles from './Footer.module.scss'
+import Image from 'next/image'
 import { cx } from '../../utils'
 
 export const Footer = (): ReactElement => {
@@ -30,42 +31,48 @@ export const Footer = (): ReactElement => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>
-                  <img
-                    className={cx(styles.icon, 'dm-invert')}
+                <span style={{ top: '3px' }}>
+                  <Image
                     src="/images/envelope-doodle-01.png"
                     alt="email doodle"
+                    width={40}
+                    height={25}
+                    className="dm-invert"
                   />
-                  tmunzar@gmail.com
                 </span>
+                tmunzar@gmail.com
               </a>
               <a
                 href="https://www.linkedin.com/in/tmunzar"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>
-                  <img
-                    className={cx(styles.icon, styles.prof, 'dm-invert')}
+                <span style={{ top: '4px' }}>
+                  <Image
                     src="/images/prof-doodle-01.png"
                     alt="linkedin doodle"
+                    width={35}
+                    height={34}
+                    className="dm-invert"
                   />
-                  linkedin
                 </span>
+                linkedin
               </a>
               <a
                 href="https://twitter.com/tmunzar"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span>
-                  <img
-                    className={cx(styles.icon, styles.birdy, 'dm-invert')}
+                <span style={{ top: '4px' }}>
+                  <Image
                     src="/images/birdy-doodle-01.png"
                     alt="linkedin doodle"
+                    width={35}
+                    height={27}
+                    className="dm-invert"
                   />
-                  twitter
                 </span>
+                twitter
               </a>
               <Annotation
                 text="best place to reach me if you want to collaborate"
@@ -159,11 +166,13 @@ export const Footer = (): ReactElement => {
               >
                 source code
               </a>
-              <img
+              <Image
                 src="/images/octo-cat-01.png"
-                style={{ width: 30, paddingTop: 5 }}
+                style={{ paddingTop: 5 }}
                 alt="A sketched doodle of the Github OctoCat icon"
                 className="dm-invert"
+                width={30}
+                height={33}
               />
               here, or check out the{' '}
               <a href="/storybook" target="_blank">

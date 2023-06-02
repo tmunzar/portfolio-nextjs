@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Annotation from '../src/components/Annotation'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import ArticleListing from '../src/components/ArticleListing'
 import {
@@ -20,16 +21,21 @@ const Home: NextPage = () => {
         <div className="container is-full-height">
           <div className="columns is-vcentered is-full-height">
             <div className="column is-two-thirds">
-              <img
-                src="/images/about/me-in-a-circle-02.png"
-                alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
+              <div
                 style={{
                   width: 200,
                   display: 'block',
                   margin: '0 auto 50px',
                 }}
                 className="show-only-for-mobile"
-              />
+              >
+                <Image
+                  src="/images/about/me-in-a-circle-02.png"
+                  alt="Talal Munzar's face surrouned by sketch doodles relevant to the UI/UX field."
+                  width={200}
+                  height={200}
+                />
+              </div>
               <h1
                 className={styles.introHeading}
               >{`Hi, I'm Talal and I like to`}</h1>
@@ -44,11 +50,13 @@ const Home: NextPage = () => {
 
               <div className="relative is-inline-block hide-for-mobile">
                 <Link href="/about">
-                  <img
+                  <Image
                     src="/images/home-doodle-01.png"
                     alt="A sketched doodle representation of my research, design and development skills. It contains icons representing those skills."
                     className="dm-invert"
-                    style={{ width: 300, marginTop: 15 }}
+                    width={300}
+                    height={254}
+                    // style={{ marginTop: 15 }}
                   />
                 </Link>
                 <Annotation
@@ -91,17 +99,22 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <img
-          src="/images/me-02.png"
-          alt="It's a me! Talal Munzar!"
+        <div
           style={{
             width: 340,
             position: 'absolute',
             right: 0,
             top: 20,
           }}
-          className="hide-for-mobile"
-        />
+        >
+          <Image
+            src="/images/me-02.png"
+            alt="It's a me! Talal Munzar!"
+            className="hide-for-mobile"
+            width={592}
+            height={1400}
+          />
+        </div>
       </section>
 
       <section className="is-grey">
@@ -126,6 +139,8 @@ const Home: NextPage = () => {
               img={{
                 src: '/images/stardog-studio/screen-01.jpg',
                 alt: 'Screen of the workspace section of Stardog Studio, a Graph Database querying application.',
+                width: 342,
+                height: 207,
               }}
               tags={[
                 { text: 'Engineer', icon: 'develop' },
@@ -145,6 +160,8 @@ const Home: NextPage = () => {
               img={{
                 src: '/images/studao/main-01.png',
                 alt: 'Mobile Screens for StuDAO, an online learning platform for Independent Filmmakers',
+                width: 342,
+                height: 207,
               }}
               tags={[
                 { text: 'Design', icon: 'design' },
