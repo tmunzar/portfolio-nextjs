@@ -139,8 +139,6 @@ const Home: NextPage = () => {
               img={{
                 src: '/images/stardog-studio/screen-01.jpg',
                 alt: 'Screen of the workspace section of Stardog Studio, a Graph Database querying application.',
-                width: 342,
-                height: 207,
               }}
               tags={[
                 { text: 'Engineer', icon: 'develop' },
@@ -160,8 +158,6 @@ const Home: NextPage = () => {
               img={{
                 src: '/images/studao/main-01.png',
                 alt: 'Mobile Screens for StuDAO, an online learning platform for Independent Filmmakers',
-                width: 342,
-                height: 207,
               }}
               tags={[
                 { text: 'Design', icon: 'design' },

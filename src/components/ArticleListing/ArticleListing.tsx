@@ -1,5 +1,4 @@
 import { ReactElement } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../Button'
 import Tag, { ITagProps } from '../Tag'
@@ -9,7 +8,7 @@ interface IArticleListingProps {
   title: string | React.ReactNode
   description: string
   href: string
-  img: { src: string; alt: string; width: number; height: number }
+  img: { src: string; alt: string; width?: number; height?: number }
   tags: ITagProps[]
   actionText?: string
 }
@@ -27,7 +26,7 @@ export const ArticleListing = (props: IArticleListingProps): ReactElement => {
     <div className={styles.articleListing}>
       <div className="columns">
         <div className="column is-two-fifths">
-          <Image {...img} />
+          <img {...img} />
         </div>
         <div className="column">
           <h2 className={styles.title}>
@@ -38,7 +37,7 @@ export const ArticleListing = (props: IArticleListingProps): ReactElement => {
           <p className={styles.description}>{description}</p>
           <div className={`tags-list ${styles.tagsList}`}>
             {tags.map((tag) => (
-              <Tag {...tag} />
+              <Tag {...tag} key={tag.text} />
             ))}
           </div>
           <div className={styles.actions}>

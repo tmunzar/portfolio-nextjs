@@ -33,7 +33,7 @@ export const WorkListing = (props: IWorkListingProps) => {
           <div className={styles.description}>{description}</div>
           <div className={`tags-list ${styles.tagsList}`}>
             {tags.map((tag) => (
-              <Tag {...tag} />
+              <Tag {...tag} key={tag.text} />
             ))}
           </div>
           {children}
