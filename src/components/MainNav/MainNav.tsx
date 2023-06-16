@@ -60,8 +60,10 @@ export const MainNav = (): ReactElement => {
           <li>
             <Link href="/#case-studies" passHref>
               <a
-                className={cx(router.pathname == '/' && styles.active)}
-                className="hide-for-mobile"
+                className={cx(
+                  router.pathname == '/' && styles.active,
+                  'hide-for-mobile'
+                )}
               >
                 Work
               </a>
