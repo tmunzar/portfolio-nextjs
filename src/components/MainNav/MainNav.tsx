@@ -59,7 +59,10 @@ export const MainNav = (): ReactElement => {
         <ul>
           <li>
             <Link href="/#case-studies" passHref>
-              <a className={cx(router.pathname == '/' && styles.active)}>
+              <a
+                className={cx(router.pathname == '/' && styles.active)}
+                className="hide-for-mobile"
+              >
                 Work
               </a>
             </Link>
@@ -70,6 +73,15 @@ export const MainNav = (): ReactElement => {
                 About
               </a>
             </Link>
+          </li>
+          <li>
+            <a
+              href="/files/Talal-Munzar-Resume-UX-Engineer-01.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </a>
           </li>
           <li>
             <a
